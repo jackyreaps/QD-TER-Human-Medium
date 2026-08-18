@@ -1,1 +1,65 @@
-# QD-TER-Human-Medium
+# Quantum Dilation of Time Emergent Reality (QD-TER)
+## Human-Medium Layer of Consciousness
+
+**A Multi-Scale Biophysical Architecture of Geometric Fields, Dielectric Waveguides, and Hypergraph Network Dynamics**
+
+> This repository contains the formalization of the **human-medium layer** of the greater QD-TER framework — the biophysical and network-dynamical substrate through which higher-dimensional geometric templates are translated into physiological states and the medium of consciousness.
+
+---
+
+### Core Cascade
+[ Higher-Dimensional Gauge Groups Ω_H ] │ ▼  (Enforces non-thermalization via [Ω_H, L_H] = 0) [ Crystalline Microtubule Dielectric Waveguides ] │ ▼  (Containment of transient microplasmas & ghost peptides inside EZ water) [ Slow-Wave Endocrinal Peptide Vector Matrices ] │ ▼  (Drives competitive selection toggle σ_v via Δε_eff) [ Upgraded Jacobian J*(Ψ) Reconfiguration ] │ ▼  (Controls phase-space potential well geometry) [ Non-Linear Hypergraph Bifurcation Space ] │ ▼  (State Vector Selection: State A Sink vs. State B Collapse) [ Macroscopic Morphogenetic Realization ]
+---
+
+### Executive Summary
+
+The Quantum Dilation of Time Emergent Reality (QD-TER) framework provides a multi-scale biophysical architecture that describes how the human organism translates higher-dimensional geometric informational templates into real-time physiological and conscious outcomes.
+
+Traditional biology relies primarily on localized lock-and-key chemical kinetics, leaving a significant explanatory gap regarding long-range cellular synchronization, macroscopic morphology, and systemic homeostasis. QD-TER addresses this scaling problem by modeling the organism as a dynamic, non-linear hypergraph driven by a top-down cascade.
+
+Invariant higher-dimensional algebraic gauge groups protect specific terahertz (THz) carrier frequencies from thermal dissipation. These protected fields guide quantum-scale transient events (microplasmas and ghost peptides) inside crystalline microtubule waveguides shielded by Exclusion Zone (EZ) water. The endocrine system is treated not as a passive chemical cascade, but as an **endocrinal matrix** — a body-wide liquid-crystalline fluidic operator that reconfigures the local sensitivity profiles of individual nodes via an upgraded Jacobian.
+
+By establishing explicit, falsifiable bifurcation boundaries, the framework shows how systemic entropic decay parameters force the global state vector to select between coherent homeostatic stability (State A) and fractured, pro-inflammatory structural decay (State B).
+
+---
+
+### Current Status
+
+- Mathematical formalization of the human-medium layer is **complete and internally consistent**.
+- Explicit numerical thresholds have been derived for cooperative (oxytocin) and antagonistic (CRH) peptides.
+- A detailed empirical verification protocol with falsifiable signatures is included.
+- This repository covers **only the human-medium / consciousness-substrate layer** of the greater QD-TER program.
+
+---
+
+### Repository Structure
+docs/                  → Sectioned documentation theory/                → Full consolidated theory document figures/               → Cascade diagrams and phase-space illustrations math/                  → Standalone equation sheets (optional) experimental/          → Experimental protocol notes
+---
+
+### Navigation
+
+- [Full Theory Document](theory/QD-TER-Human-Medium-Full.md)
+- [Sectioned Documentation](docs/)
+- [Empirical Verification Protocol](docs/09-empirical-protocol.md)
+- [Competitive Peptide Mapping (Oxytocin vs CRH)](docs/06-competitive-peptides.md)
+
+---
+
+### Greater QD-TER Context
+
+This repository formalizes only the **human biological medium** — the physical substrate through which higher-dimensional geometric information becomes physiological and conscious reality.
+
+Other layers of the broader QD-TER program (foundational mathematics, residual-flux parity applications, plasma-related concepts, etc.) are maintained in separate repositories.
+
+---
+
+### License
+
+[Choose a license — MIT, Apache-2.0, or CC-BY-4.0 recommended]
+
+---
+
+### Citation
+
+If you reference this work, please cite it as the Human-Medium Layer of the Quantum Dilation of Time Emergent Reality (QD-TER) framework.
+```​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
