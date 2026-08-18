@@ -1,3 +1,4 @@
+
 # Quantum Dilation of Time Emergent Reality (QD-TER)
 ## Human-Medium Layer: Consciousness Substrate
 
@@ -43,7 +44,7 @@ Traditional structural biology views microtubules primarily as mechanical cytosk
 - **The Ambient Coherence Challenge**: Standard biophysical consensus dictates that bulk ambient water exhibits massive dielectric absorption bands across the THz spectrum, reducing expected electromagnetic coherence lifetimes to sub-picosecond scales.
 - **Theoretical Low-Loss Core Propagation**: QD-TER proposes that coherent, collective string vibrations along the tubulin dimer lattice—acting as a macroscopic Fröhlich condensation—construct an electromagnetic potential well within the hollow core. This structural phenomenon is hypothesized to partially decouple the internal signal from ambient thermal phonon scattering, preserving phase coherence over longer biological tracking intervals.
 
-```text
+```
         [Ambient Chaotic Bulk Water: ε ≈ 80]
 ─────────────────────────────────────────────────────
   [Ordered Crystalline Tubulin Wall Layer]
@@ -51,8 +52,8 @@ Traditional structural biology views microtubules primarily as mechanical cytosk
           └───► [Protected THz Mode Center-Line Propagation]
     └── [Exclusion Zone (EZ) Water Shield: ε ≈ 4–6]
   [Ordered Crystalline Tubulin Wall Layer]
-─────────────────────────────────────────────────────
-        [Ambient Chaotic Bulk Water: ε ≈ 80]
+────────────────────────────────────────────────────
+```
 2.2 Hypothesis II: EZ Water as a Bounded Low-Permittivity Shield
 To insulate these high-frequency modes from bulk water dissipation, the framework integrates the structural observations of Exclusion Zone (EZ) water.
 Immediately adjacent to the hydrophilic surfaces of the microtubule networks, water molecules assemble into a highly ordered, liquid-crystalline hexagonal phase. This structured layer exhibits low-permittivity characteristics ($\epsilon_{\mathrm{matrix}} \sim 4.0$–$6.0$) relative to bulk water ($\epsilon \sim 80$).
@@ -180,4 +181,3 @@ Falsifies Section 6
 	•	[3] Levin, M. (2021). Bioelectric networks: the software of somatic shape. Trends in Cognitive Sciences, 25(10), 890–907.
 	•	[4] Popp, F. A., & Chang, J. J. (1998). The physical background and the biophotonics of intercellular communication. Biophotonics, 31–45.
 	•	[5] McFadden, J. (2020). Integrating information in the brain’s EM field: the cemi field theory of consciousness. Neuroscience of Consciousness, 2020(1), niaa016.
-
