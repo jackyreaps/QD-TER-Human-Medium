@@ -7,25 +7,20 @@
 
 ---
 
-## Core Cascade
+### Core Cascade
 
-```text
-[ Higher-Dimensional Gauge Groups Ω_H ]
-                 │
-                 ▼  (Enforces non-thermalization via [Ω_H, L_H] = 0)
-[ Crystalline Microtubule Dielectric Waveguides ]
-                 │
-                 ▼  (Containment of transient microplasmas & ghost peptides inside EZ water)
-[ Slow-Wave Endocrinal Peptide Vector Matrices ]
-                 │
-                 ▼  (Drives competitive selection toggle σ_v via Δε_eff)
-[ Upgraded Jacobian J*(Ψ) Reconfiguration ]
-                 │
-                 ▼  (Controls phase-space potential well geometry)
-[ Non-Linear Hypergraph Bifurcation Space ]
-                 │
-                 ▼  (State Vector Selection: State A Sink vs. State B Collapse)
+[ Higher-Dimensional Gauge Groups Ω_H ]  
+↓ (Enforces non-thermalization via [Ω_H, L_H] = 0)  
+[ Crystalline Microtubule Dielectric Waveguides ]  
+↓ (Containment of transient microplasmas & ghost peptides inside EZ water)  
+[ Slow-Wave Endocrinal Peptide Vector Matrices ]  
+↓ (Drives competitive selection toggle σ_v via Δε_eff)  
+[ Upgraded Jacobian J*(Ψ) Reconfiguration ]  
+↓ (Controls phase-space potential well geometry)  
+[ Non-Linear Hypergraph Bifurcation Space ]  
+↓ (State Vector Selection: State A Sink vs. State B Collapse)  
 [ Macroscopic Morphogenetic Realization ]
+
 ---
 
 ### Executive Summary
@@ -49,16 +44,9 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 
 ---
 
-### Repository Structure
-docs/                  → Sectioned documentation theory/                → Full consolidated theory document figures/               → Cascade diagrams and phase-space illustrations math/                  → Standalone equation sheets (optional) experimental/          → Experimental protocol notes
----
-
 ### Navigation
 
 - [Full Theory Document](theory/QD-TER-Human-Medium-Full.md)
-- [Sectioned Documentation](docs/)
-- [Empirical Verification Protocol](docs/09-empirical-protocol.md)
-- [Competitive Peptide Mapping (Oxytocin vs CRH)](docs/06-competitive-peptides.md)
 
 ---
 
@@ -66,17 +54,9 @@ docs/                  → Sectioned documentation theory/                → Fu
 
 This repository formalizes only the **human biological medium** — the physical substrate through which higher-dimensional geometric information becomes physiological and conscious reality.
 
-Other layers of the broader QD-TER program (foundational mathematics, residual-flux parity applications, plasma-related concepts, etc.) are maintained in separate repositories.
-
----
-
-### License
-
-[n/a]
-
 ---
 
 ### Citation
 
-If you reference this work, please cite it as the Human-Medium Layer of the Quantum Dilation of Time Emergent Reality (QD-TER) framework.
+Human-Medium Layer of the Quantum Dilation of Time Emergent Reality (QD-TER) framework.
 ```​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
