@@ -59,4 +59,3 @@ This repository formalizes only the **human biological medium** — the physical
 ### Citation
 
 Human-Medium Layer of the Quantum Dilation of Time Emergent Reality (QD-TER) framework.
-```​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
