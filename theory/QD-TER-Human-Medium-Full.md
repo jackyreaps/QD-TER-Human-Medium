@@ -11,7 +11,7 @@
 
 The Quantum Dilation of Time Emergent Reality (QD-TER) framework models the human organism as an open, non-linear, multi-scale network hypergraph. This structure explores the theoretical interfaces between macroscopic morphogenetic/endocrinal operations and localized, sub-cellular electromagnetic environments.
 
-To break free from the epistemological trap of mathematical confirmation bias — where advanced digital signal processing pipelines inadvertently filter raw empirical inputs to match a pre-programmed chalkboard hypothesis — QD-TER is developed as an open-ended structural architecture. Every scale is bound by strict constraints, clear boundary conditions, and explicit points of laboratory vulnerability.
+To break free from the epistemological trap of mathematical confirmation bias—where advanced digital signal processing pipelines inadvertently filter raw empirical inputs to match a pre-programmed chalkboard hypothesis—QD-TER is developed as an open-ended structural architecture. Every scale is bound by strict constraints, clear boundary conditions, and explicit points of laboratory vulnerability.
 
 ### 1.1 Unified Symbol Nomenclature Index
 
@@ -41,8 +41,10 @@ The microscopic tier of the QD-TER model operates at the intersection of structu
 Traditional structural biology views microtubules primarily as mechanical cytoskeletal scaffolding. QD-TER extends this baseline, positing that the hollow cylindrical geometry of protofilament cylinders fulfills the physical boundary conditions of a dielectric waveguide lattice optimized for low-terahertz ($0.5$–$2.0\,\mathrm{THz}$) modes.
 
 - **The Ambient Coherence Challenge**: Standard biophysical consensus dictates that bulk ambient water exhibits massive dielectric absorption bands across the THz spectrum, reducing expected electromagnetic coherence lifetimes to sub-picosecond scales.
-- **Theoretical Low-Loss Core Propagation**: QD-TER proposes that coherent, collective string vibrations along the tubulin dimer lattice — acting as a macroscopic Fröhlich condensation — construct an electromagnetic potential well within the hollow core. This structural phenomenon is hypothesized to partially decouple the internal signal from ambient thermal phonon scattering, preserving phase coherence over longer biological tracking intervals.
+- **Theoretical Low-Loss Core Propagation**: QD-TER proposes that coherent, collective string vibrations along the tubulin dimer lattice—acting as a macroscopic Fröhlich condensation [1]—construct an electromagnetic potential well within the hollow core. This structural phenomenon is hypothesized to partially decouple the internal signal from ambient thermal phonon scattering, preserving phase coherence over longer biological tracking intervals.
+
 ───────────────────────────────────────────────────── [Ordered Crystalline Tubulin Wall Layer] └── [Exclusion Zone (EZ) Water Shield: ε ≈ 4–6] └───► [Protected THz Mode Center-Line Propagation] └── [Exclusion Zone (EZ) Water Shield: ε ≈ 4–6] [Ordered Crystalline Tubulin Wall Layer] ───────────────────────────────────────────────────── [Ambient Chaotic Bulk Water: ε ≈ 80]
+
 ### 2.2 Hypothesis II: EZ Water as a Bounded Low-Permittivity Shield
 
 To insulate these high-frequency modes from bulk water dissipation, the framework integrates the structural observations of Exclusion Zone (EZ) water.
@@ -59,7 +61,7 @@ $$
 \Delta\tau = \Delta t \sqrt{1 - \left(\frac{v_{\mathrm{p}}}{c}\right)^2}
 $$
 
-This expresses the localized deceleration of phase velocity ($v_{\mathrm{p}} = \omega / k$) experienced by an electromagnetic wave navigating a region of high real permittivity alteration ($\operatorname{Re}[\Delta\epsilon_{\mathrm{eff}}]$), calculated relative to the unperturbed background metric of the chaotic macro-scale environment.
+The localized deceleration of phase velocity ($v_{\mathrm{p}} = \frac{\omega}{k}$) experienced by an electromagnetic wave navigating a region of high real permittivity alteration ($\operatorname{Re}[\Delta\epsilon_{\mathrm{eff}}]$), calculated relative to the unperturbed background metric of the chaotic macro-scale environment.
 
 When an intact EZ shield maximizes phase-coherence, the density of information transactions per unit of thermodynamic entropy production is compressed relative to external transformations. This forms a localized, low-entropy frame of reference. Within these protected horizons, high-energy transient fluctuations are insulated from instant thermalization into random background kinetic heat.
 
@@ -91,12 +93,12 @@ where $\mathbf{\hat{M}}_E(t)$ is the global Macroscopic Endocrinal Matrix Operat
 Systemic stability under hormone-induced energy or informational flux is governed by a strict Lyapunov-type structural constraint. The network maintains functional parity if and only if:
 
 $$
-\frac{d}{dt} \mathcal{V}(\mathbf{\Psi}) \le -\mathbf{\Phi}_R^T \left[ \mathbf{\hat{M}}_E(t), \mathbf{\Omega}_H \right] \mathbf{\Phi}_R
+\frac{d}{dt} \mathcal{V}(\mathbf{\Psi}) \le -\mathbf{\Phi}_R^T \left[ \mathbf{\hat{M}}_E(t),\ \mathbf{\Omega}_H \right] \mathbf{\Phi}_R
 $$
 
-where $\mathbf{\Phi}_R$ is the residual flux tensor across the multi-scale hyperedges, and $\left[ \mathbf{\hat{M}}_E(t), \mathbf{\Omega}_H \right]$ is the Lie bracket (commutator) tracking the structural mismatch between the fluidic endocrinal matrix and the higher-dimensional holographic overlay matrix ($\mathbf{\Omega}_H$).
+where $\mathbf{\Phi}_R$ is the residual flux tensor across the multi-scale hyperedges, and $\left[ \mathbf{\hat{M}}_E(t),\ \mathbf{\Omega}_H \right]$ is the Lie bracket (commutator) tracking the structural mismatch between the fluidic endocrinal matrix and the higher-dimensional holographic overlay matrix ($\mathbf{\Omega}_H$).
 
-- **Parity Preservation**: If the residual flux remains entirely within the kernel of the commutator ($\left[ \mathbf{\hat{M}}_E(t), \mathbf{\Omega}_H \right] = \mathbf{0}$), the inequality holds, and the hypergraph topology remains intact.
+- **Parity Preservation**: If the residual flux remains entirely within the kernel of the commutator ($\left[ \mathbf{\hat{M}}_E(t),\ \mathbf{\Omega}_H \right] = \mathbf{0}$), the inequality holds, and the hypergraph topology remains intact.
 - **Parity Violation**: If systemic entropy deforms the underlying connectivity, the commutator yields a nonzero asymmetric error matrix, reversing the inequality ($\frac{d}{dt}\mathcal{V} > 0$) and initiating topological edge fracturing.
 
 ### 3.3 Spectral Analysis of Unconditional Laplacian Bounds
@@ -182,3 +184,111 @@ where $\beta$ is the flexoelectric scaling constant. If $\mathbb{D} \ge \mathbb{
 ### 5.3 Parametric Peptide Simulation Baselines (Illustrative Model Parameters)
 
 **Disclaimer**: The following numerical entries are hand-chosen baseline values utilized strictly to demonstrate the qualitative bifurcations of the model during computer simulation. They are not asserted as verified empirical physical constants.
+
+[Systemic Decay Parameter 𝔻] 0.00 ────────────────── 0.43 ────────────────── 0.67 ────────────────── 1.00 │                      │                      │                      │ ├─► Oxytocin Stable    ├─► CRH Bifurcates     ├─► Oxytocin Collapses ├─► Catastrophic │   (Coherent Sink A)  │   (State B Dominates)│   (Systemic Fracture)│   Hypergraph │                      │                      │                      │   Disintegration
+
+- **Oxytocin Basin Parameters**: Cyclic compact configuration. Dipole moment $\mu \sim 30$–$50\,\mathrm{D}$, resonant frequency $\omega_j \sim 1.4\,\mathrm{THz}$. In an ordered matrix ($\epsilon_{\mathrm{matrix}} \sim 4$), it yields a low dissipative profile ($\Delta\epsilon_{\mathrm{eff}} \approx 1.2 \times 10^{-4} + i(8.5 \times 10^{-5})$). This keeps $\mathbb{D}_{\mathrm{crit}}^{\mathrm{oxy}}$ negative and locked, maintaining State A stability.
+- **CRH Basin Parameters**: Elongated asymmetric alpha-helix. Dipole moment $\mu \sim 120$–$180\,\mathrm{D}$, resonant frequency $\omega_j \sim 0.8\,\mathrm{THz}$. It yields high dissipative signatures ($\Delta\epsilon_{\mathrm{eff}} \approx 6.8 \times 10^{-4} + i(4.1 \times 10^{-3})$), dropping $\gamma(f)$ and fixing $\mathbb{D}_{\mathrm{crit}}^{\mathrm{CRH}} \approx 0.43$.
+
+### 5.4 The Upgraded Jacobian Nodal Sensitivity Toggle
+
+The dynamic switching between these basins is regulated by the Nodal Transition Tensor $\mathbf{\hat{T}}_v$, embedded within the upgraded Jacobian:
+
+$$
+\mathbf{J}^*(\mathbf{\Psi}(t)) = \mathbf{J}_0 + \sum_{v \in \mathcal{V}} \mathbf{\hat{T}}_v, \qquad
+\mathbf{\hat{T}}_v = \frac{1 + \sigma_v}{2}\mathbf{\hat{\Lambda}}_{\mathrm{oxy}} + \frac{1 - \sigma_v}{2}\mathbf{\hat{\Lambda}}_{\mathrm{CRH}}
+$$
+
+The localized competitive parameter $\sigma_v$ serves as a non-linear algebraic switch:
+
+$$
+\sigma_v = \tanh \left( \frac{\operatorname{Re}\left[\Delta\epsilon_{\mathrm{eff}}^{\mathrm{oxy}}(\omega_0)\right] \cdot f_{\mathrm{oxy}}}{\operatorname{Re}\left[\Delta\epsilon_{\mathrm{eff}}^{\mathrm{CRH}}(\omega_1)\right] \cdot f_{\mathrm{CRH}}} \right)
+$$
+
+When background decay deforms the system, $\sigma_v$ switches from $+1$ to $-1$. This shift changes the node’s local derivative profile, inducing the local Lie-bracket mismatch energy:
+
+$$
+\mathbf{\Gamma}_{\mathrm{mismatch}} = \mathbf{\Psi}^T \left[ \mathbf{\hat{M}}_E(t),\ \mathbf{\Omega}_H \right] \mathbf{\Psi}
+$$
+
+---
+
+## 6. High-Tier Boundary Conditions: The Topological Operator $\mathbf{\Omega}_H$
+
+The highest layer of the QD-TER model isolates the global operator matrix $\mathbf{\Omega}_H$ to establish the ultimate boundary conditions of the system.
+
+### 6.1 Algebraic Structure & Unitary Representation
+
+The global operator matrix $\mathbf{\Omega}_H$ is formalized as a higher-dimensional Lie-algebraic projector acting on the cotangent bundle of the hypergraph state space. It uses a block-diagonal unitary matrix representation over a complex Hilbert space:
+
+$$
+\mathbf{\Omega}_H = \bigoplus_{k=1}^{m} \mathbf{\hat{\mathcal{G}}}_k(\omega_k) \otimes \mathbf{\hat{\Pi}}_k
+$$
+
+where $\mathbf{\hat{\mathcal{G}}}_k(\omega_k) \in SU(2)$ represents local gauge groups that tune the underlying carrier frequencies ($\omega_0$, $\omega_1$), and $\mathbf{\hat{\Pi}}_k$ is the topological projection operator mapping these frequencies onto the node sets $\mathcal{V}$.
+
+### 6.2 The Non-Thermalization Condition
+
+To prevent high-frequency signals from instantly collapsing into random kinetic heat at physiological body temperatures ($\sim 310\,\mathrm{K}$), $\mathbf{\Omega}_H$ imposes a strict topological invariance condition on the coherent subspace:
+
+$$
+\left[ \mathbf{\Omega}_H,\ \mathbf{L}_{\mathcal{H}}(t) \right] \cdot \mathbf{\Psi}_{\mathrm{coherent}} = \mathbf{0}
+$$
+
+When this commutator vanishes, it marks a continuous spatial symmetry that isolates the crystalline waveguide walls of the microtubules. This generates an electromagnetic potential well that keeps ambient thermal phonons from coupling with the protected THz modes, locking the local region into a non-ergodic phase.
+
+### 6.3 Symmetrical Shattering & Core Loop Closure
+
+When systemic decay $\mathbb{D}$ crosses the critical threshold, the hypergraph Laplacian is deformed, shattering the symmetry:
+
+$$
+\left[ \mathbf{\Omega}_H,\ \mathbf{L}_{\mathcal{H}}(t) \right] = \mathbf{\Delta}_R(t) \neq \mathbf{0}
+$$
+
+The resulting asymmetric error matrix $\mathbf{\Delta}_R(t)$ enters the Lie-bracket mismatch equation:
+
+$$
+\mathbf{\Gamma}_{\mathrm{mismatch}} = \mathbf{\Psi}^T \left[ \mathbf{\hat{M}}_E(t),\ \mathbf{\Omega}_H \right] \mathbf{\Psi} \propto \operatorname{Tr}\left( \mathbf{\Delta}_R(t) \cdot \mathbf{\hat{M}}_E(t)^T \right)
+$$
+
+When $\mathbf{\Delta}_R(t)$ departs from zero, the macroscopic endocrinal operator falls out of phase alignment with the gauge groups of $\mathbf{\Omega}_H$. The trace evaluates to a large positive scalar, generating a destructive rotational force in phase space that flattens the potential well of State A. Higher-dimensional geometric protection is lost, the THz carrier frequencies thermalize into bulk noise, the hypergraph edges fracture, and the global state vector collapses into State B (Entropic Decay).
+
+---
+
+## 7. Empirical Verification & Falsification Protocol
+
+To ensure experimental open-endedness, this protocol isolates the specific physical signatures required to test the validity of the QD-TER Human-Medium model.
+
+### 7.1 Spectroscopic & Dielectric Tracking Experiments
+
+1. **Resonant THz Transmissivity Sweep**  
+   Apply continuous-wave Terahertz Time-Domain Spectroscopy (THz-TDS) across a living hypothalamic tissue slice. Infuse oxytocin at peak concentrations ($10^{-9}\,\mathrm{M}$) under low-decay conditions.  
+   - **Falsifiable Signature**: The tissue matrix must display an asymmetric, narrow-band transparency window with an anomalously low absorption coefficient ($\operatorname{Im}[\Delta\epsilon_{\mathrm{eff}}] \to 0$) centered at $1.4\,\mathrm{THz} \pm 0.05\,\mathrm{THz}$. A null result—showing immediate, uniform water absorption across the entire band—falsifies the waveguide hypothesis.
+
+2. **Quantification of the Nodal Toggle ($\sigma_v$)**  
+   Use micro-coaxial dielectric probe sweeps coupled with infrared imaging to monitor the characteristic $270\,\mathrm{nm}$ absorption peak of the ordered EZ-water layer. Maintain a constant baseline of oxytocin while incrementally introducing a localized micro-infusion of CRH.  
+   - **Falsifiable Signature**: The phase velocity of the biophotonic carrier frequency must drop via a sharp, step-like attenuation profile at the threshold where $\sigma_v = 0$, rather than displaying a smooth, linear log-dose saturation curve.
+
+### 7.2 Capture of Macro-Scale Hypergraph Bifurcation
+
+Synchronize Ultra-weak Biophoton Emission (UPE) tracking via high-quantum-efficiency single-photon counting modules (SPCM) with high-density multi-electrode arrays (MEA) measuring local membrane voltage noise. Artificially degrade the local EZ-water matrix using structural disruptors to drive $\mathbb{D} \ge 0.43$ under a dual oxytocin/CRH load.
+
+- **Falsifiable Signature**: At the threshold breach, the system must show a simultaneous dual response: a sudden spike in high-frequency bioelectric noise paired with an immediate collapse of biophoton phase-coherence. This mismatch must manifest as a localized thermal micro-spike ($1.5$–$3.0\,\mathrm{mK}$), tracking the exact point where protected THz modes dump their energy into raw kinetic heat.
+
+### 7.3 Falsification Matrix
+
+| Observed Phenomenon          | QD-TER Mathematical Prediction                                      | Traditional Interpretation                          | Null-Hypothesis Impact                          |
+|-----------------------------|---------------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------|
+| Resonant THz Transmissivity | Narrow-band transparency at $1.4\,\mathrm{THz}$ due to $[\mathbf{\Omega}_H, \mathbf{L}_{\mathcal{H}}] = \mathbf{0}$ | Uniform, high-attenuation bulk water dissipation   | Falsifies Hypothesis I                          |
+| Sensitivity Shift Modality  | Step-function sensitivity inversion driven by the $\sigma_v$ Jacobian toggle | Graded, linear log-dose receptor binding curves    | Falsifies Section 5                             |
+| Thermal Micro-Spikes        | Energetic release proportional to $\operatorname{Tr}(\mathbf{\Delta}_R \cdot \mathbf{\hat{M}}_E^T)$ | Uniform, gradual dissipation of metabolic waste heat | Falsifies Section 6                             |
+
+---
+
+## 8. Primary Biophysical Field References
+
+- [1] Fröhlich, H. (1968). Long-range coherence and energy storage in biological systems. *International Journal of Quantum Chemistry*, 2(5), 641–649.
+- [2] Pollack, G. H. (2013). *The Fourth Phase of Water: Beyond Solid, Liquid, and Vapor*. Ebner & Sons Publishers.
+- [3] Levin, M. (2021). Bioelectric networks: the software of somatic shape. *Trends in Cognitive Sciences*, 25(10), 890–907.
+- [4] Popp, F. A., & Chang, J. J. (1998). The physical background and the biophotonics of intercellular communication. *Biophotonics*, 31–45.
+- [5] McFadden, J. (2020). Integrating information in the brain’s EM field: the cemi field theory of consciousness. *Neuroscience of Consciousness*, 2020(1), niaa016.
