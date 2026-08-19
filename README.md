@@ -44,6 +44,15 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 
 ---
 
+
+### Versions
+
+| Version | File | Status |
+|---------|------|--------|
+| **v2.0 (latest)** | [QD-TER_HumanMedium_v2.0.md](./QD-TER_HumanMedium_v2.0.md) | DNA Pathway Extension — includes CYB5B validation, soliton write, endocrinal motifs |
+| v1.0 (canonical) | [QD-TER_Human-Medium_Layer.md](./QD-TER_Human-Medium_Layer.md) | Stable baseline — microtubule waveguides, EZ water, hypergraph bifurcation |
+
+
 ### Navigation
 
 - [Full Theory Document](theory/QD-TER-Human-Medium-Full.md)
