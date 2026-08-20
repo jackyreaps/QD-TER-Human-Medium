@@ -40,7 +40,9 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 - Mathematical formalization of the human-medium layer is **complete and internally consistent**.
 - Explicit numerical thresholds have been derived for cooperative (oxytocin) and antagonistic (CRH) peptides.
 - A detailed empirical verification protocol with falsifiable signatures is included.
+- v3.0 and v4.0 are now the current public release. v1.0 and v2.0 are archived for reference.
 - This repository covers **only the human-medium / consciousness-substrate layer** of the greater QD-TER program.
+
 
 ---
 
@@ -49,8 +51,13 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 
 | Version | File | Status |
 |---------|------|--------|
-| **v2.0 (latest)** | [QD-TER_HumanMedium_v2.0.md](./QD-TER_HumanMedium_v2.0.md) | DNA Pathway Extension — includes CYB5B validation, soliton write, endocrinal motifs |
+| **v4.0 (latest)** | [QD-TER_HumanMedium_v4.0_public.md](./QD-TER_HumanMedium_v4.0_public.md) | Sensory-consciousness interface — endocrinal ground state, breathwork bridge, Sigma-1 gateway |
+| **v3.0** | [QD-TER_HumanMedium_v3.0_public.md](./QD-TER_HumanMedium_v3.0_public.md) | Bodily systems architecture — dermal, vascular, vagal, organ, bone, DNA, AuNP |
+| v2.0 | [QD-TER_HumanMedium_v2.0.md](./QD-TER_HumanMedium_v2.0.md) | DNA Pathway Extension — includes CYB5B validation, soliton write, endocrinal motifs |
 | v1.0 (canonical) | [QD-TER_Human-Medium_Layer.md](./QD-TER_Human-Medium_Layer.md) | Stable baseline — microtubule waveguides, EZ water, hypergraph bifurcation |
+
+**Roadmap:** Advanced theoretical connections to the QD-TER physics suite are documented in [`POSSIBLE-NEXT-STEPS.md`](./POSSIBLE-NEXT-STEPS.md).
+
 
 
 ### Navigation
