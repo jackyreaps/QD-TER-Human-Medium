@@ -47,14 +47,14 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 ---
 
 
-### Versions
-
 | Version | File | Status |
 |---------|------|--------|
-| **v4.0 (latest)** | [QD-TER_HumanMedium_v4.0_public.md](./QD-TER_HumanMedium_v4.0_public.md) | Sensory-consciousness interface — endocrinal ground state, breathwork bridge, Sigma-1 gateway |
-| **v3.0** | [QD-TER_HumanMedium_v3.0_public.md](./QD-TER_HumanMedium_v3.0_public.md) | Bodily systems architecture — dermal, vascular, vagal, organ, bone, DNA, AuNP |
-| v2.0 | [QD-TER_HumanMedium_v2.0.md](./QD-TER_HumanMedium_v2.0.md) | DNA Pathway Extension — includes CYB5B validation, soliton write, endocrinal motifs |
-| v1.0 (canonical) | [QD-TER_Human-Medium_Layer.md](./QD-TER_Human-Medium_Layer.md) | Stable baseline — microtubule waveguides, EZ water, hypergraph bifurcation |
+| **v5.0 (latest)** | `QD-TER_HumanMedium_v5.0_public.md` | Architecture of Consciousness — seven-engine chiral electrodynamic manifold, DNA convergence node, acoustic-ECM coupling |
+| **v4.0** | `QD-TER_HumanMedium_v4.0_public.md` | Sensory-consciousness interface — endocrinal ground state, breathwork bridge, Sigma-1 gateway |
+| **v3.0** | `QD-TER_HumanMedium_v3.0_public.md` | Bodily systems architecture — dermal, vascular, vagal, organ, bone, DNA, AuNP |
+| v2.0 | `QD-TER_HumanMedium_v2.0.md` | DNA Pathway Extension — includes CYB5B validation, soliton write, endocrinal motifs |
+| v1.0 (canonical) | `QD-TER_Human-Medium_Layer.md` | Stable baseline — microtubule waveguides, EZ water, hypergraph bifurcation |
+
 
 **Roadmap:** Advanced theoretical connections to the QD-TER physics suite are documented in [`POSSIBLE-NEXT-STEPS.md`](./POSSIBLE-NEXT-STEPS.md).
 
