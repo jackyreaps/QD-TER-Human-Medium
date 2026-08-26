@@ -40,7 +40,7 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 - Mathematical formalization of the human-medium layer is **complete and internally consistent**.
 - Explicit numerical thresholds have been derived for cooperative (oxytocin) and antagonistic (CRH) peptides.
 - A detailed empirical verification protocol with falsifiable signatures is included.
-- v3.0 and v4.0 are now the current public release. v1.0 and v2.0 are archived for reference.
+- v3.0 v4.0 v5.0 and v6.0 are now public. v1.0 and v2.0 are archived for reference.
 - This repository covers **only the human-medium / consciousness-substrate layer** of the greater QD-TER program.
 
 
