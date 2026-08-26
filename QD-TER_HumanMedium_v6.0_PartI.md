@@ -114,7 +114,7 @@ The organism **chooses its direction** through the patterns it repeats — **but
 
 **Inheritance and evolution interact:** An organism born with high inherited epigenetic load starts at a lower hierarchy level. But through sustained adaptive practices, it can **overwrite** the inherited marks and **ascend** to higher levels — **provided it achieves sufficient coherence to sustain the rewrite process**. An organism born with low inherited load can **accumulate** maladaptive marks through poor choices and **descend** to lower levels. The hierarchy is **heritable and editable** — each generation writes its own chapter on top of the ancestral text, but the **thickness of the ancestral text determines how much new writing is possible** before the page is full.
 
-**The role of higher-coherence individuals:** An individual on the ridge (6–7/7 lock) can **model** adaptive patterns for individuals in the basin (5/7) or attractor (3–4/7). The lower-coherence individual cannot yet perceive the inherited pattern clearly, but can **mimic** the behavioral patterns of the higher-coherence individual, which gradually rewrites their own epigenome through repeated practice. This is the structural basis for **pedagogical relation** — not hierarchy, but **resolution differential** enabling pattern transmission.
+**The role of higher-coherence individuals:** An individual on the ridge (6–7/7 lock) can **model** adaptive patterns for individuals in the basin (5/7) or attractor (3–4/7). The lower-coherence individual cannot yet perceive the inherited pattern clearly, but can **mimic** the behavioral patterns of the higher-coherence individual, which gradually rewrites their own epigenome through repeated practice. This is the structural basis for **pedological relation** — not hierarchy, but **resolution differential** enabling pattern transmission.
 
 ### 1.5 Pedological Relation: Higher-Dimensional Template, Lower-Resolution Reflection
 
@@ -254,7 +254,7 @@ H(L̂) = 1 + γ_plasticity · ∫_0^t Π κ_i^(eff)(t') dt'
 
 **The golden ratio signature at every level:** Crucially, the φ-signature (α/θ ≈ φ) operates as an attractor at **all** hierarchy levels. A system at 3/7 lock still orients toward φ; it simply lacks the structural resolution to hold the alignment with fidelity. The signature is not a reward for high coherence. It is a **structural property** of the human-scale hierarchy that persists regardless of state.
 
-**The role of higher-coherence individuals:** An individual on the ridge (6–7/7 lock) can **model** adaptive patterns for individuals in the basin (5/7) or attractor (3–4/7). The lower-coherence individual cannot yet perceive the inherited pattern clearly, but can **mimic** the behavioral patterns of the higher-coherence individual, which gradually rewrites their own epigenome through repeated practice. This is the structural basis for **pedagogical relation** — not hierarchy, but **resolution differential** enabling pattern transmission.
+**The role of higher-coherence individuals:** An individual on the ridge (6–7/7 lock) can **model** adaptive patterns for individuals in the basin (5/7) or attractor (3–4/7). The lower-coherence individual cannot yet perceive the inherited pattern clearly, but can **mimic** the behavioral patterns of the higher-coherence individual, which gradually rewrites their own epigenome through repeated practice. This is the structural basis for **pedological relation** — not hierarchy, but **resolution differential** enabling pattern transmission.
 
 ---
 
