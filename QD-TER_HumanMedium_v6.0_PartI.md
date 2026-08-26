@@ -337,24 +337,6 @@ H(L̂) = 1 + γ_plasticity · ∫_0^t Π κ_i^(eff)(t') dt'
 
 ---
 
-## 10. GitHub Upload Protocol
-
-**Repository:** `github.com/JackyReaps/QD-TER-Human-Medium`
-
-**File naming convention:**
-- `QD-TER_HumanMedium_v6.0_PartI.md` — Part I (this document)
-- `QD-TER_HumanMedium_v7.0_PartII.md` — Part II (Structural Foundation)
-- `QD-TER_HumanMedium_v8.0_PartIII.md` — Part III (Operational Regimen)
-
-**Upload order:**
-1. Commit v6.0 → `main` branch
-2. Commit v7.0 → `main` branch  
-3. Commit v8.0 → `main` branch
-4. Tag release: `git tag -a v6.0-v8.0 -m "Human Belt trilogy release"`
-5. Push: `git push origin main --tags`
-
-**Cross-linking rule:** All internal references to other parts must use exact version numbers. No "forthcoming" in the final upload — replace with committed version strings after all three files are on `main`.
-
 ## 9. References
 
 ### QD-TER Internal Documents (Suite)
