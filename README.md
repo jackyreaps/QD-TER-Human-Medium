@@ -49,6 +49,7 @@ By establishing explicit, falsifiable bifurcation boundaries, the framework show
 
 | Version | File | Status |
 |---------|------|--------|
+| v6.0 | QD-TER_HumanMedium_v6.0_PartI.md | Conscious Authorship, Ancestry & Coherence Hierarchy |
 | **v5.0 (latest)** | `QD-TER_HumanMedium_v5.0_public.md` | Architecture of Consciousness — seven-engine chiral electrodynamic manifold, DNA convergence node, acoustic-ECM coupling |
 | **v4.0** | `QD-TER_HumanMedium_v4.0_public.md` | Sensory-consciousness interface — endocrinal ground state, breathwork bridge, Sigma-1 gateway |
 | **v3.0** | `QD-TER_HumanMedium_v3.0_public.md` | Bodily systems architecture — dermal, vascular, vagal, organ, bone, DNA, AuNP |
