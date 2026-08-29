@@ -1,78 +1,171 @@
-# Quantum Dilation of Time Emergent Reality (QD-TER)
-## Human-Medium Layer of Consciousness
+# QD-TER Human-Medium
 
-**A Multi-Scale Biophysical Architecture of Geometric Fields, Dielectric Waveguides, and Hypergraph Network Dynamics**
+**Quantum Discrete-Temporal Eigenfunction Resonance — Human-Medium Layer**
 
-> This repository contains the formalization of the **human-medium layer** of the greater QD-TER framework — the biophysical and network-dynamical substrate through which higher-dimensional geometric templates are translated into physiological states and the medium of consciousness.
+Public-facing structural biology and coherence framework. This repository
+contains the operational documents, production code, and falsification protocols
+for the QD-TER Human-Medium suite (v6.0–v8.0).
 
----
-
-### Core Cascade
-
-[ Higher-Dimensional Gauge Groups Ω_H ]  
-↓ (Enforces non-thermalization via [Ω_H, L_H] = 0)  
-[ Crystalline Microtubule Dielectric Waveguides ]  
-↓ (Containment of transient microplasmas & ghost peptides inside EZ water)  
-[ Slow-Wave Endocrinal Peptide Vector Matrices ]  
-↓ (Drives competitive selection toggle σ_v via Δε_eff)  
-[ Upgraded Jacobian J*(Ψ) Reconfiguration ]  
-↓ (Controls phase-space potential well geometry)  
-[ Non-Linear Hypergraph Bifurcation Space ]  
-↓ (State Vector Selection: State A Sink vs. State B Collapse)  
-[ Macroscopic Morphogenetic Realization ]
+> **Status:** v7.0 published. v8.0 (Operational Regimen & Protocols) forthcoming.
 
 ---
 
-### Executive Summary
+## Repository Structure
 
-The Quantum Dilation of Time Emergent Reality (QD-TER) framework provides a multi-scale biophysical architecture that describes how the human organism translates higher-dimensional geometric informational templates into real-time physiological and conscious outcomes.
-
-Traditional biology relies primarily on localized lock-and-key chemical kinetics, leaving a significant explanatory gap regarding long-range cellular synchronization, macroscopic morphology, and systemic homeostasis. QD-TER addresses this scaling problem by modeling the organism as a dynamic, non-linear hypergraph driven by a top-down cascade.
-
-Invariant higher-dimensional algebraic gauge groups protect specific terahertz (THz) carrier frequencies from thermal dissipation. These protected fields guide quantum-scale transient events (microplasmas and ghost peptides) inside crystalline microtubule waveguides shielded by Exclusion Zone (EZ) water. The endocrine system is treated not as a passive chemical cascade, but as an **endocrinal matrix** — a body-wide liquid-crystalline fluidic operator that reconfigures the local sensitivity profiles of individual nodes via an upgraded Jacobian.
-
-By establishing explicit, falsifiable bifurcation boundaries, the framework shows how systemic entropic decay parameters force the global state vector to select between coherent homeostatic stability (State A) and fractured, pro-inflammatory structural decay (State B).
-
----
-
-### Current Status
-
-- Mathematical formalization of the human-medium layer is **complete and internally consistent**.
-- Explicit numerical thresholds have been derived for cooperative (oxytocin) and antagonistic (CRH) peptides.
-- A detailed empirical verification protocol with falsifiable signatures is included.
-- v3.0 v4.0 v5.0 and v6.0 are now public. v1.0 and v2.0 are archived for reference.
-- This repository covers **only the human-medium / consciousness-substrate layer** of the greater QD-TER program.
-
-
----
-
-
-| Version | File | Status |
-|---------|------|--------|
-| **v6.0** | QD-TER_HumanMedium_v6.0_PartI.md | Conscious Authorship, Ancestry & Coherence Hierarchy |
-| **v5.0** | `QD-TER_HumanMedium_v5.0_public.md` | Architecture of Consciousness — seven-engine chiral electrodynamic manifold, DNA convergence node, acoustic-ECM coupling |
-| **v4.0** | `QD-TER_HumanMedium_v4.0_public.md` | Sensory-consciousness interface — endocrinal ground state, breathwork bridge, Sigma-1 gateway |
-| **v3.0** | `QD-TER_HumanMedium_v3.0_public.md` | Bodily systems architecture — dermal, vascular, vagal, organ, bone, DNA, AuNP |
-| v2.0 | `QD-TER_HumanMedium_v2.0.md` | DNA Pathway Extension — includes CYB5B validation, soliton write, endocrinal motifs |
-| v1.0 (canonical) | `QD-TER_Human-Medium_Layer.md` | Stable baseline — microtubule waveguides, EZ water, hypergraph bifurcation |
-
-
-**Roadmap:** Advanced theoretical connections to the QD-TER physics suite are documented in [`POSSIBLE-NEXT-STEPS.md`](./POSSIBLE-NEXT-STEPS.md).
-
-
-
-### Navigation
-
-- [Full Theory Document](theory/QD-TER-Human-Medium-Full.md)
+```
+QD-TER-Human-Medium/
+├── README.md                           # This file
+├── doc_6_0.md                          # Part I: Conscious Authorship, Ancestry & Coherence Hierarchy
+├── doc_7_0_structural_foundation.md    # Part II: Structural Foundation (this release)
+├── doc_8_0.md                          # Part III: Operational Regimen (forthcoming)
+├── docs/
+│   ├── aether_as_residual.md           # Public mathematical note on aether origin
+│   └── quick_reference.md              # One-page topology + engine-lock cheat sheet
+├── src/
+│   └── manifold/
+│       ├── __init__.py
+│       └── rheology.py                 # Production rheology module
+├── tests/
+│   └── test_rheology.py              # Unit test suite
+├── examples/
+│   └── pd_tournament.py              # Prisoner's Dilemma simulation (forthcoming)
+└── CITATION.cff
+```
 
 ---
 
-### Greater QD-TER Context
+## Document Suite
 
-This repository formalizes only the **human biological medium** — the physical substrate through which higher-dimensional geometric information becomes physiological and conscious reality.
+| Document | Title | Status |
+|----------|-------|--------|
+| **Doc 6.0** | The Human Belt — Part I: Conscious Authorship, Ancestry & The Coherence Hierarchy | Published |
+| **Doc 7.0** | The Human Belt — Part II: Structural Foundation | **Published** |
+| **Doc 8.0** | The Human Belt — Part III: Operational Regimen & Protocols | Forthcoming |
+
+### Document File Mapping
+
+The repository retains versioned filenames for historical traceability. The canonical short names used in this README map to the following actual files in the repo:
+
+| Canonical Reference | Actual File on GitHub | Part |
+|---------------------|----------------------|------|
+| `doc_6_0.md` | `QD-TER_HumanMedium_v6.0_PartI.md` | Part I |
+| `doc_7_0_structural_foundation.md` | `QD-TER_HumanMedium_v7.0_PartII.md` | Part II |
+| `doc_8_0.md` | *Forthcoming* | Part III |
+
+All three documents are **additive** — Part I establishes authorship and hierarchy, Part II supplies structural foundation, and Part III (forthcoming) will provide operational regimen. None replaces the previous.
+
+### Doc 7.0 — What's New
+
+- **Bioelectric pattern memory** as primary belief substrate (Levin 2026)
+- **Ideology / Mysticism / Truth** formalized as bioelectric-chromatin states
+- **Cognitive glue** — gap-junction electrical coupling + oxytocin viscosity reduction
+- **Inflammation, Hallucination, and the Grid** — chronic inflammation as bioelectric noise generator
+- **Attenuation protocols** — omega-3, polyphenols, vagal stimulation, sleep as grid-dissolution preconditions
+- **78 falsification experiments** with peer-reviewed anchors
+- **Production Python module** with full test coverage
 
 ---
 
-### Citation
+## Quick Start: Running the Code
 
-Human-Medium Layer of the Quantum Dilation of Time Emergent Reality (QD-TER) framework.
+```bash
+# Clone
+git clone https://github.com/JackyReaps/QD-TER-Human-Medium.git
+cd QD-TER-Human-Medium
+
+# Install dependencies
+pip install numpy pytest
+
+# Run tests
+pytest tests/test_rheology.py -v
+
+# Import in your own work
+from src.manifold.rheology import (
+    AetherSubstrateConstants,
+    BioelectricState,
+    ChiralManifoldRheology,
+    OrganismProfile,
+    process_interaction_node,
+)
+```
+
+---
+
+## Design Invariant
+
+> **The aether is an immutable substrate.** The `rheology.py` module computes
+> only downstream rheological responses. It does not rederive ε₀, μ₀, or any
+> fundamental field properties. For the conceptual origin of the medium, see
+> `docs/aether_as_residual.md`.
+
+---
+
+## Core Concepts (One-Minute Primer)
+
+| Concept | One-Sentence Definition |
+|---------|------------------------|
+| **Human Belt** | The P-V-C triad (Proprioception-Vestibular-Cortical) as minimal geometry for biological coherence |
+| **Bioelectric Pattern Memory** | Voltage-state landscapes across cell collectives that encode geometric relationship to the ordered cascade |
+| **Chromatin Residue** | Hardened metabolic residue of sustained bioelectric patterns; the slow, ATP-expensive belief layer |
+| **Cognitive Glue** | Gap-junction electrical connectivity + oxytocin-mediated viscosity reduction; both necessary for cross-brain phase-lock |
+| **Dielectric Reynolds Number (Re_ε)** | Dimensionless number governing the fluid-to-rigid transition in social coordination |
+| **ℛ-Operator** | Scale-matching recovery kernel; returns the organism to synchron point, not arbitrary equilibrium |
+| **The Grid** | Self-reinforcing oscillation between Abyss (hyper-fluid hallucination) and Valley (hyper-rigid ossification) via inflammatory loop |
+| **Attenuation** | Systematic reduction of inflammatory load to restore bioelectric preconditions for ℛ-operator function |
+
+---
+
+## Strategic Landscape Topology
+
+```
+                    The Ridge
+                 (Optimal Function)
+                       ▲
+                       │
+    Attenuation ◄──────┼──────► Bioelectric Recalibration
+    (grid break)       │      (meditation, breathwork)
+                       │
+        ▲              │              ▲
+        │              │              │
+   The Abyss ◄─────────┴─────────► The Valley
+(Hyper-fluid      Inflammation   (Hyper-rigid
+ hallucination)      Grid        ossification)
+```
+
+---
+
+## Falsification Commitment
+
+Every novel claim in Doc 7.0 carries a pre-registered falsification protocol.
+See §8 (Falsification Matrix) in the main document. Key test categories:
+
+- **Bioelectric:** Voltage-sensitive dye on fascial fibroblasts; gap-junction blocker + social coordination
+- **Neural:** α/θ ratio perturbation + tracking; handedness reversal + ρ shift
+- **Genetic:** Recombination breakpoint density at φ-scaled chromosomal positions
+- **Behavioral:** NR3C1 alignment × Prisoner's Dilemma cooperation; intranasal oxytocin × rigid defector
+- **Inflammatory:** CRP/IL-6 × bioelectric variance; 8-week attenuation × grid metrics
+
+---
+
+## Citation
+
+If you use this framework in published work:
+
+```bibtex
+@software{qdter_human_medium_2026,
+  author = {JackyReaps},
+  title = {QD-TER Human-Medium: Structural Foundation v7.0},
+  year = {2026},
+  url = {https://github.com/JackyReaps/QD-TER-Human-Medium}
+}
+```
+
+---
+
+## License
+
+
+
+---
+
+*Repository maintained by JackyReaps. For the physics suite and cascade foundation, contact via GitHub issues.*
