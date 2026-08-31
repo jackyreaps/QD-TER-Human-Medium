@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this framework in published work, please cite it as below."
+type: software
+title: "QD-TER Human-Medium: Structural Foundation v6.0–v8.0"
+authors:
+  - family-names: "Dean"
+    given-names: "James"
+repository-code: "https://github.com/JackyReaps/QD-TER-Human-Medium"
+version: 8.0
+date-released: 2026-08-29
+license: CC-BY-SA-4.0
