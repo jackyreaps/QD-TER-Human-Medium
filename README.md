@@ -4,51 +4,37 @@ QD-TER Human-Medium
 
 Quantum Dilation of Time Emergent Reality — Human-Medium Layer
 
-Human-Medium Layer of the QD-TER framework — multi-scale biophysical architecture of geometric fields, dielectric waveguides, and hypergraph dynamics.
+Human-Medium Layer of the QD-TER framework: multi-scale biophysical architecture of geometric fields, dielectric waveguides, and hypergraph dynamics.
 
 This repository contains the operational documents, production code, and falsification protocols for the QD-TER Human-Medium suite (v6.0–v9.0), built on the foundational suite (v1.0–v5.0).
 
-Status: Parts I–IV published. The four-part additive structure is complete. The v9.0 Theory and Docs layers supply the formal specification and companion notes for Part IV.
+Status: Parts I–IV published. The four-part additive structure is complete.
 
 ---
 
 What This Repository Is
 
-This is the public implementation layer of the QD-TER framework — the bridge between the abstract physics suite (discrete cascade, pre-temporal symmetry operations) and the measurable human organism.
+The public implementation layer of the QD-TER framework — the bridge between the abstract physics suite and the measurable human organism.
 
-Everything here is either:
+· Operational documents (v6.0–v9.0) mapping abstract structure to biology, game theory, and daily practice
+· Production code computing measurable quantities (dielectric Reynolds number, bioelectric decoupling, strategic topology, endocrine-chromatin writing, inter-brain coherence)
+· Falsification protocols with pre-registered experiments
+· Test suites verifying the code against the document claims
 
-· Published operational documents (v6.0–v9.0) that map abstract structural mechanics to biology, game theory, and daily practice
-· Production code that computes measurable quantities from the framework (dielectric Reynolds number, bioelectric decoupling, strategic topology, endocrine-chromatin writing, inter-brain coherence)
-· Supporting documents that explain boundary conditions, provide quick reference, and enable citation
-· Test suites that verify the code against the document claims
-
-Nothing here derives the fundamental constants (ε₀, μ₀, G_N, α_EM). Those belong to the physics suite. This layer treats the aether as an immutable substrate and computes only downstream perturbations. The 8-channel residual structure is inherited from the physics suite and is not re-derived here.
+Nothing here derives the fundamental constants (ε₀, μ₀, G_N, α_EM). The aether is treated as an immutable substrate; the 8-channel residual structure is inherited from the physics suite and not re-derived here.
 
 ---
 
-The Four-Part Additive Structure
+The Four-Part Structure
 
-The Human-Medium suite is deliberately split into four additive documents, built on the foundational v1.0–v5.0 suite. None replaces the previous. Each layer adds new structure.
+Part Document Adds
+Foundation v1.0–v5.0 Substrate layer: body-as-antenna model, P-V-C triad, myofascial lattice as dielectric
+Part I v6.0 Control layer: authorship, inherited load, coherence hierarchy (0/7 → 7/7)
+Part II v7.0 Architecture layer: P-V-C triad, ℛ-operator, α/θ signature, strategic landscape, Re_ε
+Part III v8.0 Implementation layer: body optimization regimen, Sigma-1 gateway, falsification matrix
+Part IV v9.0 Mechanism layer: endocrine-chromatin axis, hypergraph coordination, sustained conditions
 
-Part Document What It Adds
-Foundation v1.0–v5.0 — Foundational Suite The substrate layer. Early QD-TER development establishing the body-as-antenna model, the P-V-C triad as three-element resonant array, the myofascial lattice as dielectric substrate, and consciousness as received signal rather than generated product.
-Part I v6.0 — Conscious Authorship, Ancestry & The Coherence Hierarchy The control layer. Belief-mediated control, inherited epigenetic load as trajectory-determining physical adaptation, the coherence hierarchy (0/7 → 7/7 engine lock), the engine-load coherence tensor, the Model Gradient, and the pedological relation.
-Part II v7.0 — Structural Foundation The architecture layer. The P-V-C triad as triangular scale-location, the three exchange interfaces (Proprioception-Vestibular-Cortical), the ℛ-operator as scale-matching recovery kernel, the α/θ golden ratio signature, the chiral twist map, strategic landscape topology (Abyss/Ridge/Valley), social coordination as dielectric rheology (Re_ε), and the game-theory bridge.
-Part III v8.0 — Operational Regimen & Protocols The implementation layer. Complete body optimization regimen (nutrition, exercise, sleep, light, social practice), 2025–2026 advanced substrate integration (Urolithin A mitophagy, spermidine autophagy, NAD⁺ precursors, photobiomodulation), the Sigma-1 gateway safety architecture for non-linear state transitions, supra-human coherence states as deferred placeholders, tiered daily protocol, inherited-load modifications, and the operational falsification matrix.
-Part IV v9.0 — The Endocrine–Chromatin Axis The mechanism layer. Pulsatile endocrine signaling as the chromatin-writing signal, Takens phase-space reconstruction of endocrine dynamics, multi-timescale leaky-kernel integration, hypergraph coordination with order-dependent composition, the common prior as measurable methylation alignment, sustained-condition mechanism, and the source modules that implement all of it.
-
-Reading order: v1.0–v5.0 → v6.0 → v7.0 → v8.0 → v9.0. Each document assumes knowledge from the previous. Part IV's Theory layer supplies the formal specification; its Docs layer supplies the companion notes.
-
-Document File Mapping
-
-The repository retains versioned filenames for historical traceability. The canonical short names used in cross-references map to the following actual files:
-
-Canonical Reference Actual File on GitHub Part
-doc_6_0.md QD-TER_HumanMedium_v6.0_PartI.md Part I
-doc_7_0_structural_foundation.md QD-TER_HumanMedium_v7.0_PartII.md Part II
-doc_8_0.md QD-TER_HumanMedium_v8.0_PartIII.md Part III
-doc_9_0.md QD-TER_HumanMedium_v9.0/QD-TER_Human_medium_v9.0 Part IV
+Reading order: v1.0–v5.0 → v6.0 → v7.0 → v8.0 → v9.0
 
 ---
 
@@ -56,241 +42,134 @@ Repository Structure
 
 ```
 QD-TER-Human-Medium/
-│
-├── README.md                              ← this file — canonical entry point
-├── CITATION.cff                           ← software citation metadata (CC BY-SA 4.0)
-│
-├── QD-TER_HumanMedium_v6.0_PartI.md       ← Part I: Authorship & Hierarchy
-├── QD-TER_HumanMedium_v7.0_PartII.md      ← Part II: Structural Foundation
-├── QD-TER_HumanMedium_v8.0_PartIII.md     ← Part III: Operational Regimen
+├── README.md
+├── CITATION.cff
+├── QD-TER_HumanMedium_v6.0_PartI.md
+├── QD-TER_HumanMedium_v7.0_PartII.md
+├── QD-TER_HumanMedium_v8.0_PartIII.md
 │
 ├── QD-TER_HumanMedium_v9.0/
-│   ├── QD-TER_Human_medium_v9.0           ← Part IV main document
-│   │
-│   ├── Theory/                            ← v9.0 formal layer
-│   │   ├── CLAIMS.md                      ← canonical claims taxonomy
-│   │   ├── Consolidated_specification.md  ← physics-suite dependency map
-│   │   ├── Residual_integer_8.md          ← channel-count inheritance
-│   │   ├── Reduction_fep.md               ← conditional FEP reduction
-│   │   ├── Reduction_fep_derivation.md    ← full derivation
-│   │   └── Non_dual_adaptation.md         ← parallel-transport layer
-│   │
-│   └── Docs/                              ← v9.0 companion notes
-│       ├── swarm_apparatus.md             ← institutional closure
-│       ├── liouville_parity_instance.md   ← arithmetic instance of σ_parity
-│       ├── collective_antenna.md          ← multi-organism array extension
-│       └── distributed_belt.md            ← phase-locked group architecture
+│   ├── QD-TER_Human_medium_v9.0
+│   ├── Theory/          # CLAIMS.md, Consolidated_specification.md, Residual_integer_8.md, ...
+│   └── Docs/            # swarm_apparatus.md, liouville_parity_instance.md, ...
 │
-├── Frame/
-│   └── Gnosis_frame.md                    ← interpretive layer (adjacent, not dependent)
-│
-├── docs/
-│   ├── aether_as_residual.md              ← why the code treats the aether as given
-│   └── quick_reference.md                 ← one-page topology + engine-lock cheat sheet
-│
-├── src/manifold/
-│   ├── __init__.py                        ← package exports
-│   ├── rheology.py                        ← production dielectric rheology module
-│   ├── endocrine_chromatin.py             ← endocrine-to-chromatin writing pipeline
-│   └── EEG_hyperscan.py                   ← source-space iCOH gate
-│
-├── tests/
-│   ├── test_rheology.py                   ← dielectric rheology tests
-│   ├── Test_endocrine_chromatin.py        ← endocrine-chromatin tests
-│   ├── Test_EEG_hyperscan.py              ← hyperscanning gate tests
-│   └── Test_integration_eeg.py            ← EEG gate integration tests
-│
-├── examples/
-│   └── pd_tournament.py                   ← iterated Prisoner's Dilemma example
-│
-├── theory/
-│   └── QD-TER-Human-Medium-Full.md        ← consolidated theory document (legacy)
-│
-└── POSSIBLE-NEXT-STEPS.md                 ← roadmap
+├── Frame/               # Gnosis_frame.md (interpretive layer)
+├── docs/                # aether_as_residual.md, quick_reference.md
+├── src/manifold/        # rheology.py, endocrine_chromatin.py, EEG_hyperscan.py
+├── tests/               # test_rheology.py, Test_endocrine_chromatin.py, ...
+├── examples/            # pd_tournament.py
+└── POSSIBLE-NEXT-STEPS.md
 ```
 
----
+<details>
+<summary><strong>Full file descriptions</strong> (click to expand)</summary>Core documents
 
-Why Each File Exists
+· QD-TER_HumanMedium_v6.0_PartI.md — Authorship, ancestry, coherence hierarchy. The control layer.
+· QD-TER_HumanMedium_v7.0_PartII.md — Structural foundation. P-V-C triad, ℛ-operator, strategic landscape, Re_ε. The architecture layer.
+· QD-TER_HumanMedium_v8.0_PartIII.md — Operational regimen. Nutrition, exercise, sleep, Sigma-1 gateway, falsification matrix. The implementation layer.
+· QD-TER_HumanMedium_v9.0/QD-TER_Human_medium_v9.0 — Endocrine–chromatin axis. Pulsatile signaling, Takens reconstruction, hypergraph coordination, sustained conditions. The mechanism layer.
 
-docs/aether_as_residual.md — The rheology.py module treats the aether as an immutable substrate — it does not derive ε₀, μ₀, or polaritonic density from first principles. This document explains why that assumption is structurally sound: the aether is the residual phase-space medium that remains after discrete symmetry operations (3-fold triskelion + 5-fold pentagram + dimensional projection) have been imposed on pre-structural possibility space. It is not a "thing" before the symmetries; it is the patternized void that results from them. Readers who follow the code from Part II can stop here; those who seek the structural origin of the medium itself will find it in the cascade foundation documents.
+v9.0 Theory layer
 
-docs/quick_reference.md — A one-page cheat sheet for practitioners and researchers. Contains the strategic landscape topology (Abyss → Ridge → Valley), the seven-engine manifold with frequency bands, the P-V-C triad mapping, the coherence hierarchy levels (0/7 through 7/7), the falsification matrix summary, and key operational numbers (0.1 Hz RFB, omega-3 dosing, collagen/glycine targets). Designed to be printed or kept open during code review.
+· Theory/CLAIMS.md — Canonical taxonomy: Axiom (inherited/modeling), Definition, Derivation, Reduction theorem, Conjecture, Falsification test.
+· Theory/Consolidated_specification.md — Meta-level document. Physics-suite dependencies, integer-8 inheritance, FEP reduction, adoption order.
+· Theory/Residual_integer_8.md — Inheritance chain: N_waist = 36 → V₄ → dim_{F₂}(V₄) = 2 → N_frames = 4 → N_channels = 8.
+· Theory/Reduction_fep.md — Local, conditional reduction to FEP recognition dynamics (Axioms D, S, G, C).
+· Theory/Reduction_fep_derivation.md — Full derivation.
+· Theory/Non_dual_adaptation.md — Riemannian metric on parameter space, parallel transport of an intentionality vector.
 
-QD-TER_HumanMedium_v9.0/Theory/Consolidated_specification.md — The meta-level document governing how all other theory documents should be read. Lists the physics-suite dependencies. Consolidates the integer-8 inheritance, the FEP reduction, and the non-dual layer. References CLAIMS.md. Gives the adoption order and dependency summary.
+v9.0 Docs (companion notes)
 
-QD-TER_HumanMedium_v9.0/Theory/CLAIMS.md — The canonical taxonomy of every claim in the repository: Axiom (inherited), Axiom (modeling), Definition, Derivation, Reduction theorem (conditional), Conjecture, Falsification test. Where a claim is conditional or conjectural, it is labeled as such in the document that makes it.
+· Docs/swarm_apparatus.md — Institutional closure. DiMaggio & Powell, Gieryn, Luhmann.
+· Docs/liouville_parity_instance.md — Arithmetic realization of σ_parity as the Liouville function.
+· Docs/collective_antenna.md — Multi-organism arrays. Array gain ∝ N, directivity ∝ N². (Conjecture)
+· Docs/distributed_belt.md — Phase-locked group architecture. Constraint scaling. (Conjecture)
 
-QD-TER_HumanMedium_v9.0/Theory/Residual_integer_8.md — Specifies the inheritance chain for the channel count: N_waist = 36 → V₄ → dim_{F₂}(V₄) = 2 → N_frames = 4 → N_channels = 8. Includes the notation warning: do not write 8 = 4 × (2 × 2); that conflates the group order with the F₂-dimension.
+Source modules
 
-QD-TER_HumanMedium_v9.0/Theory/Reduction_fep.md — Specifies a local, conditional reduction of QD-TER dynamics to FEP recognition dynamics. Conditional on Axioms D, S, G, C. The theorem is local in state space and linearized. Global fixed-point alignment and full nonlinear identity are explicitly not claimed.
+· src/manifold/rheology.py — Re_ε, bioelectric decoupling, strategic topology, cognitive glue, interaction-node processing, optional EEG gate.
+· src/manifold/endocrine_chromatin.py — Takens embedding, regime classification, leaky-kernel integration, 8-channel write vector.
+· src/manifold/EEG_hyperscan.py — 6-source hexad, toy lead-field, iCOH-based field-level phase-lock gate.
 
-QD-TER_HumanMedium_v9.0/Theory/Non_dual_adaptation.md — Proposes a Riemannian metric on the parameter space and formalizes belief updates as parallel transport of an intentionality vector. Conditional on the physics suite supplying the metric. Holonomy caveat stated. Coercion claim downgraded to detection.
+Supporting
 
-QD-TER_HumanMedium_v9.0/Docs/swarm_apparatus.md — Extends the individual-scale coordination mechanism of v9.0 §4 to institutional networks. Uses established sociology (DiMaggio & Powell, Gieryn, Luhmann). Does not extend the QD-TER formal apparatus into institutional territory.
+· docs/aether_as_residual.md — Why the code treats the aether as given.
+· docs/quick_reference.md — One-page cheat sheet.
+· Frame/Gnosis_frame.md — Declared interpretive layer (adjacent, not a dependency).
+· tests/ — Pytest suites for each module.
+· examples/pd_tournament.py — Iterated Prisoner's Dilemma example.
+· POSSIBLE-NEXT-STEPS.md — Roadmap.
 
-QD-TER_HumanMedium_v9.0/Docs/liouville_parity_instance.md — Provides the arithmetic realization of σ_parity as the Liouville function λ(n) = (−1)^Ω(n), and cites the conditionally Lean-verified case that every positive multiple of 4 is the sum of two positive integers with Liouville value −1.
+</details>---
 
-QD-TER_HumanMedium_v9.0/Docs/collective_antenna.md — Extends the antenna framing from Part II to multi-organism arrays. Array gain ∝ N, directivity ∝ N². All claims labeled Conjecture.
-
-QD-TER_HumanMedium_v9.0/Docs/distributed_belt.md — Formalizes the operational architecture of a phase-locked group. Specifies the constraint-scaling rule under collective coupling. All claims labeled Conjecture.
-
-Frame/Gnosis_frame.md — The declared interpretive layer. Adjacent to the framework, not a dependency of it. Holds the metaphysical commitments as declared positions and explicitly disclaims any derivation from the mathematics.
-
-src/manifold/rheology.py — The production implementation of the dielectric rheology layer. Computes:
-
-· Dielectric Reynolds Number Re_ε as a function of oxytocin receptor activation and gap-junction density
-· Bioelectric decoupling detection from resting-potential deviation and gap-junction density
-· Strategic topology classification (Abyss / Ridge / Valley / Turbulent)
-· Metabolic demethylation cost (the ATP barrier to belief revision)
-· Cognitive glue index (the combined OXTR × GJ coupling strength)
-· Full interaction-node processing for two-organism game-theoretic encounters
-· Optional EEG gate integration via use_eeg_gate
-
-Design invariant enforced: The aether is immutable. The module computes only downstream fluid perturbations.
-
-src/manifold/endocrine_chromatin.py — The endocrine-to-chromatin writing pipeline. Implements:
-
-· EndocrineSignal — pulse train with ultradian step
-· ChromatinChannel — per-channel tissue weight, baseline methylation, parity class
-· EndocrineChromatinEngine — Takens delay embedding, Jacobian regime classification, multi-timescale leaky-kernel integration, allostatic load computation, 8-channel write vector
-
-Design invariant enforced: The channel count (8) is a required constructor parameter, inherited from the physics suite. The module does not re-derive it.
-
-src/manifold/EEG_hyperscan.py — The source-space inter-brain coherence gate. Implements:
-
-· SourceSpace — 6-source hexad (P_A, V_A, C_A, P_B, V_B, C_B)
-· SensorMontage — toy 16-channel montage with a distance-based lead-field
-· compute_hyperscan_phase_lock — full pipeline: synthesize → forward → reconstruct → iCOH
-
-Design invariant enforced: Never touches aether constants. Consumes a plain dictionary of rheology outputs. Uses imaginary coherence (iCOH) rather than raw PLV so that volume conduction does not pass the gate.
-
-tests/test_rheology.py — Pytest-validated tests covering monotonic Re_ε rise with OXTR and GJ, strategic topology classification, bioelectric decoupling detection, and full integration including phase-lock blocking.
-
-tests/Test_endocrine_chromatin.py — Channel-count enforcement, Takens embedding dimension checks, leaky-kernel spectrum integration, allostatic load integral, and channel write validation.
-
-tests/Test_EEG_hyperscan.py — Kuramoto coupling locks under high coupling; zero coupling produces iCOH below threshold; volume conduction does not pass iCOH.
-
-examples/pd_tournament.py — Placeholder for the full Prisoner's Dilemma tournament simulation. The v8.0 operational regimen supplies the biological parameters; this module will eventually instantiate OrganismProfile objects, modulate Re_ε via oxytocin dosing protocols, detect cross-brain phase-lock via simulated EEG hyperscanning, and track strategic topology transitions across iterated interactions.
-
-CITATION.cff — Standard software citation file (Citation File Format v1.2.0). Enables automated citation extraction by GitHub, Zenodo, and reference managers. License: CC BY-SA 4.0.
-
----
-
-Quick Start: Running the Code
+Quick Start
 
 ```bash
-# Clone
 git clone https://github.com/JackyReaps/QD-TER-Human-Medium.git
 cd QD-TER-Human-Medium
-
-# Install dependencies
 pip install numpy scipy pytest
-
-# Run all tests
 pytest tests/ -v
+```
 
-# Import in your own work
+```python
 from src.manifold.rheology import (
-    AetherSubstrateConstants,
-    BioelectricState,
-    ChiralManifoldRheology,
-    GroupAgent,
-    HypergraphCoordinationEngine,
-    OrganismProfile,
-    process_interaction_node,
+    ChiralManifoldRheology, OrganismProfile,
+    BioelectricState, process_interaction_node,
 )
 from src.manifold.endocrine_chromatin import (
-    ChromatinChannel,
-    EndocrineChromatinEngine,
-    EndocrineSignal,
+    EndocrineChromatinEngine, EndocrineSignal, ChromatinChannel,
 )
-from src.manifold.EEG_hyperscan import (
-    SensorMontage,
-    SourceSpace,
-    compute_hyperscan_phase_lock,
-    imaginary_coherence,
-)
+from src.manifold.EEG_hyperscan import compute_hyperscan_phase_lock
 ```
 
 ---
 
-Core Concepts (One-Minute Primer)
+Core Concepts
 
-Concept One-Sentence Definition
+Concept Definition
 Human Belt The P-V-C triad (Proprioception-Vestibular-Cortical) as minimal geometry for biological coherence
-Bioelectric Pattern Memory Voltage-state landscapes across cell collectives that encode geometric relationship to the ordered cascade
-Chromatin Residue Hardened metabolic residue of sustained bioelectric patterns; the slow, ATP-expensive belief layer
-Cognitive Glue Gap-junction electrical connectivity + oxytocin-mediated viscosity reduction; both necessary for cross-brain phase-lock
-Dielectric Reynolds Number (Re_ε) Dimensionless number governing the fluid-to-rigid transition in social coordination
-ℛ-Operator Scale-matching recovery kernel; returns the organism to synchron point, not arbitrary equilibrium
-The Grid Self-reinforcing oscillation between Abyss (hyper-fluid hallucination) and Valley (hyper-rigid ossification) via inflammatory loop
-Attenuation Systematic reduction of inflammatory load to restore bioelectric preconditions for ℛ-operator function
-Sigma-1 Gateway Non-linear state-transition safety architecture; transient impedance transformation via endogenous DMT–Sigma-1R binding
-Antenna Maintenance The v8.0 operational regimen reframed as dielectric cleaning, impedance matching, and tuning calibration
-Inherited Load Ancestral epigenetic marks (NR3C1, FKBP5 methylation) that physically constrain the organism's coherence hierarchy trajectory
-Pedological Relation Pattern transmission from higher- to lower-resolution reflection; not hierarchy, but resolution differential
-8-Channel Residual Sector The chromatin writing width, inherited from the physics suite's residual V₄ action on the 36-mode waist
-Sustained-Condition Mechanism Long-term conditions shape the physiological systems that encode strategic posture; the residue is proportional to duration and intensity, not event content
-Hypergraph Coordination N-agent coordination as a field density over hyperedges, with order-dependent composition
-EEG Hyperscanning Gate Source-space iCOH measurement that gates the scalar phase-lock decision by rejecting volume conduction
+Bioelectric Pattern Memory Voltage-state landscapes encoding geometric relationship to the ordered cascade
+Chromatin Residue Hardened metabolic residue of sustained bioelectric patterns; the slow belief layer
+Cognitive Glue Gap-junction connectivity + oxytocin-mediated viscosity reduction
+Re_ε Dielectric Reynolds Number — governs fluid-to-rigid transition in social coordination
+ℛ-Operator Scale-matching recovery kernel; returns to synchron point, not arbitrary equilibrium
+The Grid Oscillation between Abyss (hyper-fluid) and Valley (hyper-rigid) via inflammatory loop
+Sigma-1 Gateway Non-linear state-transition safety architecture
+8-Channel Sector Chromatin writing width, inherited from residual V₄ action on the 36-mode waist
+Sustained-Condition Mechanism Long-term conditions shape physiological systems; residue ∝ duration × intensity
 
 ---
 
-Strategic Landscape Topology
+Strategic Landscape
 
 ```
-                    The Ridge (Optimal Function)
+                    The Ridge (Optimal)
                              ▲
                              │
     Attenuation ◄────────────┼────────────► Bioelectric
     (grid break)             │              Recalibration
-                             │              (meditation, breathwork)
-                             │
-                             ▲
                              │
     The Abyss ◄──────────────┴──────────────► The Valley
-    (Hyper-fluid                             (Hyper-rigid
-     hallucination)                           ossification)
-                Inflammation Grid
+    (Hyper-fluid)                            (Hyper-rigid)
 ```
 
-The Ridge is a bounded interval, not a fixed point. Movement across the landscape is governed by the same mechanisms that govern coherence hierarchy ascent/descent.
-
----
-
-Falsification Commitment
-
-Every novel claim in Docs 6.0–9.0 carries a pre-registered falsification protocol. Key test categories:
-
-· Bioelectric: Voltage-sensitive dye on fascial fibroblasts; gap-junction blocker + social coordination
-· Neural: α/θ ratio perturbation + tracking; handedness reversal + ρ shift
-· Genetic: Recombination breakpoint density at φ-scaled chromosomal positions
-· Behavioral: NR3C1 alignment × Prisoner's Dilemma cooperation; intranasal oxytocin × rigid defector
-· Inflammatory: CRP/IL-6 × bioelectric variance; 8-week attenuation × grid metrics
-· Operational: Body optimization pre/post; 0.1 Hz RFB + posturography; cold exposure + VOR
-· Endocrine-chromatin (v9.0): Phase-space reconstruction of the HPA axis; chromatin writing quantization; common-prior methylation alignment; Ridge–Valley bifurcation mapping
-· Collective (v9.0): Hypergraph order-dependence; intergenerational propagation; distributed belt phase-lock verification
-
-See the falsification matrix in each document for experiment numbers 51–85+.
+The Ridge is a bounded interval, not a fixed point.
 
 ---
 
 Design Invariants
 
-1. The aether is an immutable substrate. The suite does not re-derive it.
-2. The 8-channel count is inherited from the physics suite. The suite does not re-derive it.
-3. The FEP reduction is local and conditional. The suite does not claim global alignment.
-4. Intergenerational propagation of physiological conditions is an open empirical question.
-5. The EEG hyperscanning layer is a simulator, not a validated measurement instrument.
-6. Collective coordination is a sustained-condition mechanism, not a mechanism that transfers information between individuals.
-7. The interpretive layer is declared in Frame/Gnosis_frame.md and is adjacent to the framework, not a dependency of it.
+1. The aether is an immutable substrate. Not re-derived here.
+2. The 8-channel count is inherited from the physics suite.
+3. The FEP reduction is local and conditional.
+4. Intergenerational propagation is an open empirical question.
+5. The EEG hyperscanning layer is a simulator.
+6. Collective coordination is a sustained-condition mechanism.
+7. The interpretive layer (Frame/Gnosis_frame.md) is adjacent, not a dependency.
 
 ---
 
 Citation
-
-If you use this framework in published work:
 
 ```bibtex
 @software{qdter_human_medium_2026,
@@ -301,8 +180,6 @@ If you use this framework in published work:
 }
 ```
 
-For individual parts and companion notes, cite by filename and version.
-
 ---
 
 License
@@ -311,20 +188,4 @@ CC BY-SA 4.0. See CITATION.cff for details.
 
 ---
 
-Repository maintained by JackyReaps. For the physics suite and cascade foundation, contact via GitHub issues.
-
----
-
-What was wrong and what changed
-
-Issue Fix
-Acronym in header said "Quantum Discrete-Temporal Eigenfunction Resonance" Corrected to "Quantum Dilation of Time Emergent Reality"
-Status line said "v6.0–v8.0" and "three-part structure is complete" Updated to "v6.0–v9.0" and "four-part additive structure is complete"
-"Retrocausal bridge" mentioned in "What This Repository Is" Removed
-Foundation suite (v1.0–v5.0) was not listed Added as the substrate layer in the additive structure table
-Repository structure did not reflect v9.0 folders, Theory/, Docs/, Frame/, or new source modules Fully rebuilt to match the actual repo
-File explanations only covered v6.0–v8.0 era Added explanations for all v9.0 Theory files, Docs companions, the Frame, and the three new source modules
-Quick Start imports were outdated Updated to include the new modules
-Core Concepts table lacked v9.0 concepts Added 8-channel, sustained-condition, hypergraph coordination, EEG gate, pedological relation
-Falsification section lacked v9.0 test categories Added endocrine-chromatin and collective protocols
-Citation said v6.0–v8.0 Updated to v6.0–v9.0
+Maintained by JackyReaps. For the physics suite and cascade foundation, open a GitHub issue.
