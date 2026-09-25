@@ -1,7 +1,6 @@
 """QD-TER Human-Medium manifold package.
 
-Production rheology module for dielectric fluid dynamics
-and bioelectric state computation.
+Production rheology module + optional EEG hyperscanning gate.
 """
 
 from .rheology import (
@@ -13,6 +12,12 @@ from .rheology import (
     process_interaction_node,
 )
 
+from .eeg_hyperscan import (          # change to EEG_hyperscan if you keep the capitalised filename
+    compute_hyperscan_phase_lock,
+    SensorMontage,
+    SourceSpace,
+)
+
 __all__ = [
     "AetherSubstrateConstants",
     "BioelectricState",
@@ -20,4 +25,7 @@ __all__ = [
     "OrganismProfile",
     "StrategicTopology",
     "process_interaction_node",
+    "compute_hyperscan_phase_lock",
+    "SensorMontage",
+    "SourceSpace",
 ]
