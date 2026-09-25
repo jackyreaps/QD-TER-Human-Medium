@@ -411,8 +411,8 @@ def recognition_dynamics_rhs(
 def model_from_rheology_glue(
     glue: float,
     f: float = 0.5,
-    Psi_A: float = 1.0,
-    Psi_B: float = 0.2,
+   Psi_A: float = 0.2
+   Psi_B: float = 1.0
 ) -> GenerativeModel:
     """Build a GenerativeModel with G taken from rheology.compute_cognitive_glue_index."""
     return GenerativeModel(f=f, Psi_A=Psi_A, Psi_B=Psi_B, glue=float(glue))
