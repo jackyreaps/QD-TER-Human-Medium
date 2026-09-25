@@ -315,16 +315,16 @@ Repository maintained by JackyReaps. For the physics suite and cascade foundatio
 
 ---
 
-Changes made from the previous version:
+What was wrong and what changed
 
-Fix What changed
-Acronym "Quantum Discrete-Temporal Eigenfunction Resonance" → "Quantum Dilation of Time Emergent Reality"
-Retrocausal bridge Removed the "(discrete cascade, pre-temporal symmetry operations, retrocausal bridge)" mention in the "What This Repository Is" section
-Status Updated from "v6.0–v8.0" and "three-part" to "v6.0–v9.0" and "four-part"
-Foundation suite Added the v1.0–v5.0 foundational suite as the first row in the additive structure table, referenced in reading order
-Repository structure Updated to reflect the actual v9.0 folder, Theory/ and Docs/ layers, the Frame/ folder, and the new source modules
-File explanations Added explanations for the v9.0 Theory files, the v9.0 Docs companions, the Frame, and the new source modules
-Quick start Updated imports to include the new modules
-Concepts Added v9.0 concepts (8-channel, sustained-condition, hypergraph coordination, EEG gate)
-Falsification Added the v9.0 test categories
-Citation Updated from v6.0–v8.0 to v6.0–v9.0
+Issue Fix
+Acronym in header said "Quantum Discrete-Temporal Eigenfunction Resonance" Corrected to "Quantum Dilation of Time Emergent Reality"
+Status line said "v6.0–v8.0" and "three-part structure is complete" Updated to "v6.0–v9.0" and "four-part additive structure is complete"
+"Retrocausal bridge" mentioned in "What This Repository Is" Removed
+Foundation suite (v1.0–v5.0) was not listed Added as the substrate layer in the additive structure table
+Repository structure did not reflect v9.0 folders, Theory/, Docs/, Frame/, or new source modules Fully rebuilt to match the actual repo
+File explanations only covered v6.0–v8.0 era Added explanations for all v9.0 Theory files, Docs companions, the Frame, and the three new source modules
+Quick Start imports were outdated Updated to include the new modules
+Core Concepts table lacked v9.0 concepts Added 8-channel, sustained-condition, hypergraph coordination, EEG gate, pedological relation
+Falsification section lacked v9.0 test categories Added endocrine-chromatin and collective protocols
+Citation said v6.0–v8.0 Updated to v6.0–v9.0
