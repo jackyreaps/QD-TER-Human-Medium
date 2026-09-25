@@ -163,8 +163,8 @@ class GenerativeModel:
         Observation and prior covariances (diagonal by default).
     """
     f: float = 0.5
-    Psi_A: float = 1.0
-    Psi_B: float = 0.2
+    Psi_A: float = 0.2
+    Psi_B: float = 1.0
     glue: float = 0.5
     eta_prior: Optional[np.ndarray] = None
     Sigma_o: Optional[np.ndarray] = None
@@ -408,9 +408,6 @@ def recognition_dynamics_rhs(
 # Convenience: wire rheology glue into the model
 # ---------------------------------------------------------------------------
 
-# GenerativeModel dataclass defaults
-Psi_A: float = 0.2
-Psi_B: float = 1.0
 
 # model_from_rheology_glue signature
 def model_from_rheology_glue(
