@@ -9,6 +9,7 @@ BIOELECTRIC EXTENSION (Levin 2026): Organism profiles include empirically
 measurable bioelectric state variables. These are boundary conditions on the
 pre-existing substrate, not cascade-derived quantities.
 """
+
 from dataclasses import dataclass
 from enum import Enum
 from typing import Dict, Any, Tuple
@@ -76,7 +77,7 @@ class ChiralManifoldRheology:
         self,
         substrate_density: float,
         chromatin_tension: float,
-        enzymatic_efficiency: float
+        enzymatic_efficiency: float,
     ) -> float:
         if substrate_density < 0 or chromatin_tension < 0 or enzymatic_efficiency < 0:
             raise ValueError("Physical inputs for metabolic calculation must be non-negative.")
@@ -86,7 +87,7 @@ class ChiralManifoldRheology:
     def compute_cognitive_glue_index(
         self,
         oxtr_activation: float,
-        gap_junction_density: float
+        gap_junction_density: float,
     ) -> float:
         oxtr_clamped = max(float(oxtr_activation), 1e-5)
         gj_clamped = max(float(gap_junction_density), 1e-5)
@@ -97,7 +98,7 @@ class ChiralManifoldRheology:
         charge_density: float,
         phase_velocity: float,
         oxtr_activation: float,
-        gap_junction_density: float = 1.0
+        gap_junction_density: float = 1.0,
     ) -> float:
         if charge_density < 0 or phase_velocity < 0 or oxtr_activation < 0:
             raise ValueError("Physical metrics cannot be negative values.")
@@ -143,6 +144,7 @@ def process_interaction_node(
     player_b: OrganismProfile,
     external_oxtr_stimulus: float,
     engine: ChiralManifoldRheology,
+    use_eeg_gate: bool = False,
 ) -> Dict[str, Any]:
     external_oxtr_stimulus = max(0.0, external_oxtr_stimulus)
 
@@ -172,7 +174,7 @@ def process_interaction_node(
         re_epsilon=re_epsilon, current_credit=player_a.coherence_credit
     )
 
-    is_phase_locked = (
+    is_phase_locked_scalar = (
         re_epsilon >= engine.min_re_threshold
         and alignment_delta < 0.2
         and bioelectric_delta < 10.0
@@ -181,10 +183,10 @@ def process_interaction_node(
     decoupled_a, severity_a = engine.assess_bioelectric_decoupling(player_a.bioelectric)
     decoupled_b, severity_b = engine.assess_bioelectric_decoupling(player_b.bioelectric)
 
-    return {
+    result = {
         "dielectric_reynolds_number": re_epsilon,
         "topology_status": strategic_topology,
-        "phase_locked": is_phase_locked,
+        "phase_locked_scalar": is_phase_locked_scalar,
         "chromatin_alignment_delta": alignment_delta,
         "bioelectric_alignment_delta": bioelectric_delta,
         "bioelectric_decoupled": decoupled_a or decoupled_b,
@@ -193,3 +195,20 @@ def process_interaction_node(
             external_oxtr_stimulus, mean_gj
         ),
     }
+
+    if use_eeg_gate:
+        # Import here to keep the EEG layer optional and avoid circular imports
+        try:
+            from .eeg_hyperscan import compute_hyperscan_phase_lock
+        except ImportError:
+            from .EEG_hyperscan import compute_hyperscan_phase_lock  # fallback for current filename
+
+        eeg = compute_hyperscan_phase_lock(result)
+        result.update(eeg)
+        result["phase_locked"] = (
+            is_phase_locked_scalar and eeg["field_phase_locked"]
+        )
+    else:
+        result["phase_locked"] = is_phase_locked_scalar
+
+    return result
