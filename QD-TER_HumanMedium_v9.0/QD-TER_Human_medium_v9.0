@@ -1,0 +1,618 @@
+QD-TER Human-Medium v9.0
+
+The Human Belt — Part IV: The Endocrine–Chromatin Axis
+
+Pulsatile Writing, Hypergraph Coordination, and Sustained Conditions
+
+Status: Public release. Fourth part of the Human-Medium framework. Governed by Theory/Consolidated_specification.md and Theory/CLAIMS.md.
+
+How to read this document. This is the fourth part of the QD-TER Human-Medium framework (GitHub, September 2026). Part I (v6.0) covers conscious authorship, ancestry as trajectory-determining adaptation, and the coherence hierarchy. Part II (v7.0) established the structural foundation: the P-V-C triad as triangular location, the seven-engine manifold anchored by the brainstem pump, the ℛ-operator as scale-matching recovery, the α/θ golden-ratio signature, and — most important for this document — the physical redefinition of belief as bioelectric-chromatin architecture, strategic rigidity as demethylation cost, and social coordination as oxytocin-mediated dielectric rheology. Part III (v8.0) supplied the operational regimen. Part IV (this document) completes the biological mechanism underlying the Part II game-theory bridge: how the endocrine system writes onto chromatin, how chromatin state encodes strategic posture, how N-agent coordination extends the dyadic payoff integral, and how sustained conditions shape the physiological systems that encode strategic behavior.
+
+The Antenna Narrative. The body-as-antenna model established in the early QD-TER work treats the P-V-C triad as a three-element resonant array. The myofascial lattice is the dielectric substrate; the otolith organs are the gravitational reference dipoles; the cortical loop is the adaptive impedance matcher. Part II extended this to social coordination through oxytocin-mediated viscosity reduction and gap-junction electrical coupling. This Part extends it carefully: the endocrine system is the antenna's tuning signal — the pulsatile carrier that maintains impedance match across time. The extension of the antenna framing to multi-organism arrays is developed in the companion note The Collective Antenna (docs/collective_antenna.md, forthcoming) rather than in this document. What this Part establishes is the biological substrate any such array would need to operate on.
+
+The interpretive layer. This document specifies mechanisms. It does not specify what the mechanisms mean. The interpretive commitments — locality as the agent's mode of being, invariance as orientation preservation, gnosis as participation in the field rather than receipt of propositions — are declared in Frame/Gnosis_frame.md. The Frame is adjacent to this document, not a dependency of it. A reader who rejects the Frame can read this document on its own terms. A reader who accepts the Frame can read this document as the formal expression of one of its commitments. Both readings are available because the layers are kept distinct.
+
+Precondition. Everything in this document is conditional on the future physics suite. The residual waist, the parity group V₄, the waist-mode projector, and the four-frame decomposition are results of that suite. The human-medium layer inherits these objects and does not re-derive them. The dependency is explicit in Theory/Consolidated_specification.md.
+
+The QD-TER framework lives at github.com/JackyReaps/QD-TER-Human-Medium.
+
+---
+
+Abstract
+
+Part II established five physical identifications for strategic behavior: a belief is a bioelectric pattern memory, a hardened belief is methylated chromatin, strategic rigidity is the metabolic cost of demethylation exceeding available ATP, social coordination is oxytocin-mediated viscosity reduction plus gap-junction coupling, and the common prior is shared NR3C1/FKBP5 methylation topology. Those identifications were asserted in Part II. This Part supplies the mechanism.
+
+The endocrine system operates as a pulsatile signaling channel whose pulse structure — not its mean concentration — is the signal that chromatin reads (Lightman 2010; Stavreva 2009; Veldhuis, deconvolution studies). The nucleosome is the physical writing substrate. The channel count is 8, inherited from the physics suite's residual V₄ action on the 36-mode waist and specified in Theory/Residual_integer_8.md; this Part does not re-derive it. Phase-space reconstruction (Takens 1981) recovers the dynamical regime from endocrine time series; linear stability theory classifies the regime; the leaky-kernel ODE provides memory dynamics. Social coordination extends from dyadic encounters to N-agent hypergraph payoff fields with order-dependent composition. The common prior is quantified as measurable methylation alignment at NR3C1, FKBP5, and OXTR.
+
+The document closes by extending the framework to sustained conditions. The scaling rule from Part II (9 → 15 → 25 → 42) placed the single-organism ceiling at 9 and stated that higher constraint counts require engineered substrates or multi-organism coupling. This Part establishes the mechanism by which collective coordination could produce persistent physiological change: not ritual, but the sustained conditions that coordinated research, shared practice, and material improvements create. The specific collective-array architecture — the Distributed Human Belt — is developed in docs/distributed_belt.md (forthcoming).
+
+---
+
+Section 0: Inheritance and Scope
+
+0.1 What This Part Inherits
+
+From the physics suite, per Theory/Residual_integer_8.md:
+
+· Residual waist N_waist = 36
+· Hierarchical reduction 12 → 6 → 3
+· Residual parity group V₄ ≅ ℤ₂ × ℤ₂ with generators σ_parity and τ_gap
+· Waist-mode projector Π_waist restricting V₄ to the 36-mode block
+· Four orientation frames on the waist
+· The 8-channel residual sector
+
+The full dependency chain is in Theory/Consolidated_specification.md.
+
+0.2 What This Part Supplies
+
+· The endocrine signaling mechanism that writes onto chromatin (§1–§2)
+· The phase-space and leaky-kernel dynamics that connect pulse structure to chromatin state (§3)
+· The hypergraph extension of Part II's dyadic payoff field to N-agent coordination (§4)
+· The common prior quantified as measurable methylation alignment (§5)
+· The sustained-condition mechanism by which long-term conditions shape physiological systems (§6)
+· The institutional closure mechanism as a companion to §4 (§7)
+· The arithmetic instance of the σ_parity generator (§8)
+· Source module specifications and integration contract (§9)
+· Falsification protocols continuing Part II's numbering (§10)
+
+0.3 The Channel Count
+
+The writing width is 8, from the residual V₄ action on the 36-mode waist:
+
+N_{\text{channels}} = N_{\text{frames}} \times \dim_{\mathbb{F}_2}(V_4) = 4 \times 2 = 8.
+
+The multiplier is the 𝔽₂-dimension of V₄ (which is 2), not the group order |V₄| (which is 4). The form 8 = 4 × (2 × 2) evaluates to 16 and conflates the two. Full specification: Theory/Residual_integer_8.md.
+
+0.4 Claims Taxonomy
+
+Every claim is classified per Theory/CLAIMS.md: Axiom (inherited), Axiom (modeling), Definition, Derivation, Reduction theorem (conditional), Conjecture, Falsification test. Where a claim in this Part has a CLAIMS.md entry, the ID is cited inline.
+
+0.5 What This Part Does Not Claim
+
+· That the 8 is re-derived from chromatin, histones, or phase-space reconstruction.
+· That the FEP reduction is global or unconditional. It is local and conditional on Axioms G and C of Theory/Reduction_fep.md.
+· That intergenerational propagation of physiological conditions is established. It is an open empirical question with a specific falsification design (§10, Protocol 84).
+· That collective coordination produces capabilities outside the physics of constituent nodes. It changes the sustained conditions under which those nodes operate (§6).
+· That the collective antenna framing is established at the multi-organism scale. That extension is developed in docs/collective_antenna.md (forthcoming).
+· That any structural claim in this document establishes a metaphysical position. The mechanisms in §1–§10 are conditional on the physics suite and falsifiable by empirical protocol. The interpretive readings are in Frame/Gnosis_frame.md and are declared, not derived.
+
+---
+
+Section 1: The Endocrine Signal
+
+1.1 Pulse as Information
+
+The endocrine system does not transmit via static concentration. Lightman & Conway-Campbell (2010) established that the HPA axis operates through discrete episodic bursts, and Veldhuis's deconvolution studies demonstrated that pulse frequency, amplitude, duration, and inter-pulse interval carry information independently of mean level. The system is a digital-analog hybrid transmitter, not a slowly varying chemical bath.
+
+The critical result for this framework is Stavreva et al. (2009, Nature Cell Biology): pulsatile versus sustained glucocorticoid exposure produces measurably different chromatin remodeling at the same locus, at equal mean concentration. The pulse structure is the signal. Concentration is the carrier. The distinction is not cosmetic — it is the difference between two entirely different patterns of gene regulation at the same average hormone level.
+
+This fixes the input object for the entire pipeline: a one-dimensional time series x(t) of hormone concentration, sampled at the ultradian step τ ≈ 90 min. Everything downstream — the phase-space reconstruction, the leaky-kernel integration, the chromatin writes — takes this time series as its source.
+
+1.2 The Three Brains as Decoders
+
+Part II §1.2.2 mapped the three brains functionally onto the P-V-C triad. The cardiac brain drives the tissue-scale dielectric substrate (P); the enteric brain anchors the body-to-Earth reference frame (V); the cephalic brain operates as the adaptive matcher (C). All three decode the same systemic endocrine signal through tissue-specific chromatin accessibility.
+
+The mapping is functional, not anatomical. The cardiac brain is not "in" the proprioceptive system; rather, its electromagnetic and mechanical oscillations directly shape the myofascial lattice's piezoelectric response, which is what the P-interface reads. The enteric brain's metabolic and neurochemical output anchors the body-to-Earth reference frame that the V-interface operates against. The cephalic brain's predictive dynamics run on the integrated P+V substrate.
+
+The three brains are not three separate genomes. They carry the same 24 chromosome types. What differs is chromatin weighting — the tissue-specific topological accessibility of that genome in each neural system, established in Roadmap Epigenomics and ENCODE data. The same pulse train drives distinct responses in liver, heart, and brain because the local chromatin state filters the incoming signal differently. The three brains are three decoders of the same systemic endocrine output.
+
+1.3 The Five Endocrine Axes as the 5-Fold Generator
+
+Part II §1.2.1 introduced the endocrine dual (testosterone/estrogen) as the biological instantiation of the 5-fold pentagram inflation. The five endocrine axes — HPA, HPG, HPT, somatotropic, lactotropic — are the five channels through which that dual acts.
+
+The tier structure (hypothalamus → pituitary → target gland) is the 3-fold root. The axis structure is the 5-fold inflation. The two are coprime: gcd(3,5) = 1. This is why the endocrine system has both a universal three-tier architecture and five distinct axes without one reducing to the other. If the tier count shared a factor with the axis count, the endocrine system would collapse into a degenerate architecture; the coprimality is what allows both to be simultaneously present.
+
+1.4 The Ultradian Pulse Train
+
+The 12-hour high-vigilance phase of the diurnal cycle contains approximately 8 major ultradian cortisol peaks at the classic ~90-min inter-pulse interval:
+
+\frac{12 \text{ h}}{90 \text{ min}} = 8.
+
+This is a model choice — ultradian cortisol pulses continue through sleep — but it is clean, and it matches the inherited channel count from Theory/Residual_integer_8.md. The 8-dot chain is the temporal template onto which habits, routines, and sustained endocrine exposures imprint.
+
+The habit-to-baseline chain is worth stating explicitly because it is the core of what this Part argues:
+
+Behavior repeats → period locks to the endocrine pulse train → the axis engaged by the behavior accumulates a stronger pulse → the pulse pattern stabilizes → chromatin writes the stabilized pattern → the baseline persists.
+
+Once locked and weighted, the pattern is what the chromatin system writes. The written state is what persists beyond the behavior itself.
+
+---
+
+Section 2: Chromatin Writing
+
+2.1 Belief as Bioelectric-Chromatin Architecture
+
+Part II §1.4 established: a belief is a voltage-state landscape across cell collectives, and a hardened belief is the methylated chromatin residue of a sustained bioelectric pattern. The bioelectric substrate is the working belief (fast, ms–min). The chromatin substrate is the long-term belief (slow, hours–generations). Belief revision is a two-step process: fast bioelectric rewrite, then slow chromatin consolidation.
+
+The bioelectric pattern memory is not metaphor. Every cell maintains a resting membrane potential via ion pumps and channels, and cell collectives form distributed electrical networks through gap junctions. These networks implement stable voltage-state landscapes that encode anatomical set-points, strategic postures, and geometric relationships to the ordered cascade (Levin 2026). A planarian cut into fragments regenerates the correct body plan because its cells hold a bioelectric pattern memory, not because they re-read their DNA.
+
+The same mechanism encodes strategic beliefs. When an organism adopts a sustained orientation toward some feature of the world, that orientation is first encoded as a bioelectric pattern. If the belief is sustained, the bioelectric pattern induces chromatin remodeling: specific loci — NR3C1, FKBP5, BDNF — become methylated, locking the pattern into a hardened metabolic residue that persists even if the bioelectric field fluctuates.
+
+This Part adds the mechanism that Part II left implicit: the endocrine pulse train is what drives the bioelectric landscape, and the pulse geometry is what determines which chromatin loci get written.
+
+2.2 The Nucleosome as Writing Substrate
+
+The nucleosome core particle — two each of H2A, H2B, H3, H4, wrapped by ~147 bp of DNA — is the physical substrate on which Stavreva's pulsatile GR-chromatin remodeling acts. The octamer has a dyad symmetry axis: the H3-H4 tetramer sits at the center, with the two H2A-H2B dimers flanking it. The dyad axis is the structural feature that allows parent-of-origin asymmetry to be read into the octamer.
+
+The octamer is the writing substrate, not the channel count. The channel count is the 8 inherited from the residual V₄ sector. The two are separate objects: one is the physical medium, the other is the addressing scheme. A reader who knows the histone biology will note that the octamer is 4 types × 2 copies, not 8 independent channels; the distinction matters because the two copies of each type are structurally symmetric, and treating them as independent would produce an incorrect count. The 8 is not derived from the octamer.
+
+2.3 The 8 Residual Channels
+
+The two generators of V₄ — σ_parity and τ_gap — act on the endocrine pulse train as:
+
+· σ_parity: the even/odd partition of pulse index (which pulses carry the writing signal)
+· τ_gap: the minimal shift-by-2 in pulse position (how consecutive pulses couple)
+
+Four orientation frames survive the gauge reduction, each carrying both generators. This gives 4 × 2 = 8 residual writing channels. The biology layer inherits this count and does not need to defend it at the chromatin level; the derivation lives in the physics suite.
+
+2.4 Tissue-Specific Decoding
+
+Roadmap Epigenomics and ENCODE data establish that chromatin accessibility profiles are highly tissue-specific. The same 8-channel endocrine output is decoded differently in liver, cardiac tissue, and neural tissue because the local chromatin state filters the incoming signal differently.
+
+The three brains are three decoders of the same 8-channel signal. They do not have different channel counts. They have different channel weights. This is why a systemic endocrine shift can produce distinct tissue-specific responses without any change to the DNA sequence.
+
+2.5 The Imprinting Dipole
+
+Genomic imprinting provides the parent-of-origin asymmetry that the framework requires. Imprinted regions — 15q11–q13, 11p15.5 — carry parent-of-origin-specific marks that bias allele expression. The imprinting axis is the one genomic mechanism that carries genuine maternal/paternal weighting.
+
+Tissue-specific imprinting in brain versus other tissues is documented. Extension to cardiac and enteric nervous systems specifically is an open empirical question. The framework treats the imprinting dipole as the deep-layer bias that 8-channel writing acts upon, with tissue-specific imprinting as a testable prediction rather than an established input.
+
+---
+
+Section 3: Phase-Space and Leaky Kernel
+
+3.1 Phase-Space Reconstruction
+
+The endocrine signal is a time series. Following Takens (1981), the delay-coordinate vector
+
+\mathbf{X}(t) = \big(x(t),\, x(t+\tau),\, \dots,\, x(t+(d-1)\tau)\big)
+
+reconstructs a manifold M ⊂ ℝ^d that is topologically equivalent to the underlying dynamical system, provided d > 2n for n active degrees of freedom. The reconstructed manifold is the emergent geometry of the endocrine state space — not an imposed shape, but one derived from the signal itself.
+
+This is the correct role of geometry in the framework. It is not a geometric overlay applied to biology from an unrelated domain; it is the emergent phase-space structure that the endocrine signal traces out. The Jacobian classification in §3.2 is meaningful because the manifold is real.
+
+3.2 Stability Classification
+
+The local dynamics at equilibrium X* are governed by the Jacobian
+
+\mathbf{J} = \left.\frac{\partial \mathbf{F}}{\partial \mathbf{X}}\right|_{\mathbf{X} = \mathbf{X}^*},
+
+whose eigenvalues λ_j = α_j + iβ_j classify the regime:
+
+Regime Eigenvalue condition Physiological interpretation
+Stable node α_j < 0, β_j = 0 Aperiodic recovery, low allostatic load
+Stable focus α_j < 0, some β_j ≠ 0 Healthy ~90-min ultradian pulse train
+Limit cycle isolated periodic orbit Diurnal entrainment
+Unstable focus / Hopf pair crosses Re = 0 Loss of pulsatility, transition to saturation
+Chaotic attractor positive Lyapunov exponent Chronic desynchronization
+
+This is standard linear stability theory applied to the leaky-kernel ODE. It classifies the dynamical regime — how the signal arrives. It does not classify the chromatin channels — where the signal is written. The two layers are separate and should not be conflated. The dynamical regime tells us whether the pulse train is coherent; the channel count tells us how that coherent pulse train is addressed onto chromatin.
+
+3.3 The Leaky Kernel
+
+The chromatin state integrates the endocrine signal rather than tracking it instantaneously:
+
+\frac{dX}{dt} = -\lambda X + S(t),
+
+where S(t) is the pulse input and λ is the recovery rate.
+
+Real recovery is multi-timescale: fast cortisol clearance (minutes), slow HPA axis reset (hours), very slow structural remodeling (weeks–months). The honest form is a spectrum:
+
+X(t) = \sum_k A_k e^{-\lambda_k t} + X_{\text{baseline}},
+
+with λ_k spanning several orders of magnitude. The constants are measurable from cortisol recovery curves after acute stress, and their divergence across timescales is what produces the difference between a system that resets quickly and one that accumulates load.
+
+3.4 Allostatic Load
+
+Allostatic load is the integrated un-cleared residue:
+
+\Lambda_{\text{allo}} = \int_0^T \left|X(t) - X_{\text{baseline}}\right| dt.
+
+This connects to McEwen's quantitative allostatic-load framework (1998). The inflammatory viscosity load η_inflam in Part II's Re_ε formula is the same quantity at the network scale.
+
+The endocrine-motif geometry — the nested pulsatility hierarchy of ultradian, circadian, and infradian scales — is what carries across time. The signal that reaches chromatin is not the hormone concentration; it is the pulse geometry. Lightman's group showed this directly: pulsatile cortisol drives NR3C1 transcription differently than constant cortisol at equal mean. The ultradian rhythm is the signal; concentration is the carrier; geometry is the content.
+
+This is why the correlation between pulse geometry and chromatin state is stable across studies while the content of the sustained condition is not. What was the person experiencing during the exposure is irrelevant to the chromatin mark. The geometry is what propagates.
+
+---
+
+Section 4: Hypergraph Coordination
+
+4.1 From Dyadic to Hypergraph Payoffs
+
+Part II §3.5 modeled strategic interaction as a two-organism encounter with dielectric viscosity reduction. Real coordination is N-organism. The payoff function generalizes from a pairwise matrix to a field density over a hyperedge:
+
+\Pi(v_i) = \int_{\Omega_e} \left(\Lambda_{CG}(\mathbf{x}) \cdot \nabla \mathcal{J}_{K^+} - \eta_{\text{inflam}}(\mathbf{x})\right) d\mathbf{x},
+
+where Λ_CG is the Cognitive Glue Index (Part II §3.5.2; Def1 of CLAIMS.md), 𝒥_K⁺ is the potassium wave velocity through the shared substrate, and η_inflam is the inflammatory viscosity load. The strategic yield for node v_i is determined by the total structural integration of the hyperedge it occupies, not by pairwise transactions.
+
+The reformulation is not cosmetic. Hypergraph public goods games with heterogeneous investment produce qualitatively different cooperation dynamics than their dyadic counterparts, including the stabilization of cooperation at lower investment thresholds. The field-density formulation captures this.
+
+4.2 Order-Dependent Composition
+
+Inside a phase-locked hyperedge, the order in which nodes commit restricts the state space available to every subsequent node. Earlier commitments shrink the reachable configuration space. The composition is order-dependent:
+
+g_{\text{group}} = \prod_{i=1}^{n} \sigma_{GJ}^{(i)} \cdot \rho_{OXTR}^{(i)},
+
+where the product preserves order.
+
+This is a non-commutative monoid, not a group — there are no inverses. The order-dependence is the substantive claim. Calling it non-Abelian group structure overstates the algebra and invites dismissal from readers with algebra training. Order-dependent composition is enough, and it is empirically true: receiving hormone A before hormone B yields a different physiological outcome than receiving B before A, and group commitment sequences produce correspondingly different final states.
+
+4.3 De-Symmetrization and the Ridge
+
+As the group coordinates on The Ridge, the system undergoes spontaneous symmetry breaking: the uncoordinated possibilities of independent agents collapse into a discrete subgroup H ⊂ G. This is the mathematical signature of collective decision-making, not a failure mode.
+
+If the system over-corrects, losing all fluid flexibility, it enters the hyper-rigid Valley state where H ossifies and blocks subsequent adaptation. The Ridge is not a fixed point but a bounded interval of Re_ε in which H retains residual symmetry sufficient for reconfiguration.
+
+4.4 The Five Strategic Regimes
+
+The payoff integral generates five regimes under recursive scale-inflation:
+
+· The Abyss — Re_ε → 0, low Λ_CG, dominant defection, pattern memory collapse
+· The Turbulent Grid — unstable oscillation, no stable subgroup forms
+· The Ridge — 3.0 ≤ Re_ε ≤ 15.0, resonant cooperation, ℛ-operator active
+· The Valley — Re_ε > 15.0, hyper-rigid ossification, frozen conformity
+· The Cross-Kingdom Register — payoff integration extends past species boundary
+
+The first four were established in Part II §5.5. The fifth extends the hyperedge to include non-human biological actors. This is treated in the biology-suite Technical Note on cross-kingdom waveguides and is not developed further here.
+
+4.5 The Ridge–Valley Bifurcation
+
+The transition from Ridge (resonant cooperation) to Valley (rigid ossification) is not a gradual drift. It is a bifurcation in the strategic landscape. The control parameter is the ratio of demethylation cost to available ATP: when ΔG_reconfig / ATP_budget exceeds a threshold, the system cannot afford belief revision, and the strategic posture locks.
+
+This is the physical meaning of the "strategic rigidity" identification from Part II §0.6. An organism with deep methylation at NR3C1 cannot simply "decide" to trust a partner. The metabolic cost of rewriting the chromatin state exceeds the ATP available during the interaction window. Defection is not chosen; it is the only strategy encoded in the affordable chromatin state.
+
+4.6 The EEG Hyperscanning Gate
+
+The scalar phase-lock criterion in Part II §3.5 is necessary but not sufficient. Two organisms with high scalar alignment but zero true coupling can still pass the scalar test, because volume conduction produces apparent coherence. The EEG hyperscanning layer (separate module, §9) provides the field-level gate: it reconstructs source-space activity, computes single-trial imaginary coherence (which suppresses zero-lag leakage), and only flags phase-lock when source-level coupling exceeds threshold.
+
+The gate is optional. When disabled, the scalar criterion governs. When enabled, phase-lock requires both scalar alignment and field-level iCOH above threshold.
+
+---
+
+Section 5: The Common Prior as Physical Alignment
+
+5.1 The Identification
+
+Part II §0.6 identified the common prior as shared NR3C1/FKBP5 methylation topology plus aligned bioelectric baselines. This section quantifies that identification.
+
+5.2 NR3C1 and Sustained HPA Activation
+
+Chronic HPA-axis activation — whatever its source — drives NR3C1 promoter hypermethylation and glucocorticoid receptor downregulation. This is replicated across chronic stress studies, sustained caregiver burden, chronic illness cohorts, and meditation studies in the opposite direction. The 2019 study on a Kenyan warrior cohort found NR3C1 methylation associated with both combat exposure and prosocial emotion — in-group altruism and out-group hostility in the same methylation signal. This is the closest thing in the literature to a molecular correlate of parochial altruism as a belief mechanism, and it is a study of sustained conditions, not of discrete events.
+
+5.3 OXTR and Out-Group Empathy
+
+OXTR methylation correlates with reduced social and emotional functioning. A meta-analytic review ties OXTR methylation to impairments in empathy, cooperation, and social cognition. This is the out-group empathy lever. If the Valley state involves OXTR methylation-driven reduction in social sensitivity, this is where the evidence is.
+
+5.4 The Common Prior as Measurable Alignment
+
+The common prior is not a cognitive assumption. It is a measurable methylation profile shared across a group whose members have undergone similar sustained conditions. Two organisms with matched NR3C1 profiles and aligned resting potentials share a common prior because their chromatin and voltage-state landscapes are physically congruent. They do not need to agree on a worldview — their worldviews are physically congruent at the methylation and membrane-potential levels.
+
+This is why family members, who share epigenetic patterns and developmental bioelectric environments through imprinting, often exhibit intuitive strategic coordination without explicit communication. The coordination is not negotiated. It is the consequence of shared physiological baselines.
+
+---
+
+Section 6: Sustained Conditions
+
+6.1 The Mechanism
+
+Long-term conditions shape the physiological systems that encode strategic posture. The endocrine-chromatin axis is the mechanism: sustained HPA-axis activation, sustained inflammatory load, sustained attentional focus each leave structural residues at NR3C1, FKBP5, and OXTR. The residue is proportional to the duration and intensity of the exposure, not to any particular content.
+
+The framework does not distinguish between sources of sustained HPA activation. A demanding training regimen, a long illness, a period of intense grief, a stretch of chronic work overload, and a period of sustained meditation all produce endocrine exposures. The chromatin system responds to the exposure's geometry, not its meaning. This is §3.4's pulse-geometry claim applied to long timescales: what writes is the sustained pattern, not the event content.
+
+6.2 Developmental Windows
+
+When sustained exposure overlaps with developmental windows — prenatal period, early childhood, puberty — the system being shaped is still organizing, and the residue is correspondingly deeper. This is where the endocrine-chromatin axis produces lasting effects: not because the exposure was dramatic, but because the exposure was sustained during a period when the chromatin baseline was still being set.
+
+The developmental-window effect is why the framework treats early-life conditions as the primary determinant of baseline chromatin topology, while treating adult conditions as modulators of an already-established baseline. Neither is deterministic. The window is not a critical period in the strict sense; it is a period of heightened plasticity.
+
+6.3 Intergenerational Propagation
+
+The physiological systems of offspring are shaped by the endocrine environment their parents' sustained conditions produced — through gestation, lactation, and early care. This is not transmission of specific memories or events. It is propagation of a sustained physiological state through the developmental environment. What propagates is the condition, not the content of any experience.
+
+The distinction matters. The framework does not claim that a parent's experience of a specific event is transmitted to offspring. It claims that the sustained endocrine conditions under which the parent's body operated are reflected in the developmental environment the offspring develops within, and that this environment shapes the offspring's chromatin baseline. The environment is not carrying information about the parent's experience; it is carrying the physiological state the parent's body established.
+
+6.4 Collective Coordination as Sustained-Condition Change
+
+Coordinated groups — research teams, communities working on shared problems, populations engaged in sustained collective projects — change the material and physiological conditions their members operate under. This is not a mystical mechanism. It is the ordinary consequence of §2–§3 operating on a different input.
+
+Three concrete pathways:
+
+Pathway 1: Material improvements. Coordinated research and engineering produce material changes to the group's environment — better food, better shelter, better medical care, better information. Each of these changes the sustained endocrine exposure of the group's members. The chromatin system writes the new exposure pattern.
+
+Pathway 2: Shared physiological conditions. Coordinated practice produces shared physiological conditions — synchronized sleep schedules, shared dietary patterns, common physical activities. These produce shared endocrine pulse geometries. Over time, the shared geometry produces aligned chromatin baselines across the group, which is what §5.4 describes as a physical common prior.
+
+Pathway 3: Distributed load. A group carrying a shared task distributes the metabolic cost of the task across its members. No single node bears the full load. The load distribution changes the ATP budget each node has available for chromatin rewriting, which changes the affordability of belief revision at the individual level (§4.5).
+
+6.5 What Collective Coordination Does Not Do
+
+· It does not clear specific ancestral memories. What propagates across generations is a sustained physiological condition, not content. What coordinated groups can change is the sustained condition, not the historical events that shaped the parental generation.
+· It does not transfer chromatin marks between individuals. The group's members do not exchange methylated DNA. What they exchange is a shared environment that produces similar chromatin outcomes in each member through the same mechanism (§2–§3).
+· It does not bypass the bifurcation at the individual level. A node in the Valley cannot be pulled to the Ridge by the group alone; the bifurcation is a local metabolic condition. Collective coordination creates the conditions under which individual recovery becomes affordable; it does not perform the recovery.
+
+6.6 The Collective Antenna and Distributed Belt
+
+The extension of the antenna framing to multi-organism arrays — the collective antenna — is developed in docs/collective_antenna.md (forthcoming). The specific architecture of a phase-locked group operating as a distributed array is developed in docs/distributed_belt.md (forthcoming).
+
+The Frame (Frame/Gnosis_frame.md §3, commitment to Locality) reads the collective array as the field appearing through multiple localized perspectives rather than as separate observers cooperating. This Part specifies the mechanism by which the group's activity changes each member's sustained conditions. The Frame specifies what that change means. The two are kept separate so that either can be evaluated without the other.
+
+Both companion notes build on the sustained-condition mechanism established in §6.1–§6.4. The claims they make — array gain, collective constraint scaling, distributed load — are conditional on the mechanism in this section and are labeled as Conjecture in CLAIMS.md pending empirical validation.
+
+What this Part establishes is the mechanism. The collective-array architectures are the applications, and they deserve their own documents.
+
+---
+
+Section 7: The Institutional Layer
+
+7.1 What This Section Introduces
+
+§4 describes coordination among individuals. The institutional layer describes coordination among organizations. The mechanism is structurally identical — shared substrate, coupling density, threshold — but the actors are institutions rather than organisms.
+
+7.2 The Swarm Mechanism
+
+When an anomalous framework appears, dominant institutions converge on a defensive posture without central directive. This is the equilibrium of locally rational responses by actors sharing a resource environment. DiMaggio & Powell (1983) identified the three mechanisms: coercive, mimetic, and normative isomorphism.
+
+The specific activity is what Gieryn (1983) called boundary work: the practices by which institutions demarcate legitimate from illegitimate knowledge. Boundary work is a constitutive feature of any professionalized knowledge domain, not a corruption of it.
+
+7.3 Operational Closure
+
+Luhmann's apparatus applies. Social systems are operationally closed: each reproduces itself through its own operations, using a binary code meaningless to other systems. The academic system's code is true/false. An anomaly with no bearing on that distinction cannot be registered — not from bias, but from the absence of the operation required to process it.
+
+7.4 The Enclosure Ratio
+
+The enclosure ratio 𝒦 measures the proportion of a system's operations that are internally referential. As 𝒦 → 1, the system becomes fully self-referential; as 𝒦 → 0, it loses internal coherence. The productive range is narrow: enough closure to hold a position, enough openness to register a genuine anomaly.
+
+7.5 Companion Note
+
+The full development of the institutional layer, with its own citations (Bourdieu, Collins, Kuhn, Luhmann), is in docs/swarm_apparatus.md (forthcoming). This section serves as the internal anchor.
+
+---
+
+Section 8: The Arithmetic Instance
+
+8.1 σ_parity and the Liouville Function
+
+The residual generator σ_parity from Theory/Residual_integer_8.md acts on the integer lattice as the even/odd partition. Its arithmetic realization is the Liouville function:
+
+\lambda(n) = (-1)^{\Omega(n)},
+
+where Ω(n) counts prime factors with multiplicity. The condition λ(n) = −1 is the odd-parity class. The Dirichlet series
+
+\sum_{n=1}^\infty \frac{\lambda(n)}{n^s} = \frac{\zeta(2s)}{\zeta(s)}
+
+places the Liouville function directly on the critical line Re(s) = 1/2 — the same locus as the waist caustic. This is not an analogy. The Liouville function is the arithmetic object that lives on the critical-line bridge.
+
+8.2 The Verified Case
+
+A conditionally Lean-verified proof establishes that every positive multiple of 4 is a sum of two positive integers with Liouville of value −1 (Mangerel 2024 for the the multiples-of-8 case; the CaptainS frameworkude repository for the multiples-of-4 formalization.
+
+). This is not a proof of Goldbach. It is a verified arithmetic instance### of the parity-additive structure that the physics suite places structurally.
+
+8.3 Companion Note
+
+The full statement, the Lean verification reference, and the structural mapping to σ_parity are in docs/liouville_parity_instance.md (forthcoming).
+
+---
+
+Section 9: Source Modules
+
+The code supporting this Part is maintained in three modules. Each is committed separately because each is designed for reuse by other layers9.1 src/manifold/endocrine_chromatin.py — separate commit
+
+Provides the endocrine-to-chromatin writing pipeline. Key types:
+
+· EndocrineSignal — pulse times, pulse amplitudes, ultradian step
+· ChromatinChannel — per-channel tissue weight, baseline methylation, parity class (from σ_parity)
+· EndocrineChromatinEngine — Takens delay embedding, Jacobian regime classification, leaky-kernel integration with multi-timescale spectrum, allostatic load computation, channel write vector
+
+Channel count is a required constructor parameter with default 8, so the module can be reused at other scales without re-derivation. The module does not import from rheology.py; it operates on plain numpy arrays and dataclasses, so it can be used by other layers of the suite without pulling the rheology layer as a dependency.
+
+9.2 src/manifold/eeg_hyperscan.py — separate commit
+
+Provides the hyperscanning gate. Key types:
+
+· SourceSpace — the 6-source hexad (P_A, V_A, C_A, P_B, V_B, C_B)
+· SensorMontage — toy 16-channel montage with a distance-based lead-field
+· compute_hyperscan_phase_lock — full pipeline: synthesize → forward → reconstruct → iCOH
+
+Uses imaginary coherence (iCOH) via Welch cross-spectral density rather than raw phase-locking value. Volume conduction produces zero-lag coherence, which is purely real in the cross-spectrum; taking the imaginary part suppresses it. The lead-field is a simulation placeholder; the module's calling interface is designed so the forward/inverse operators can be replaced with an MNE-based implementation without changing the caller.
+
+The module does not import from rheology.py. It consumes a plain dictionary of rheology outputs. This keeps it usable as a standalone analysis tool for any coherence-gating application.
+
+9.3 src/manifold/rheology.py — extension commit
+
+The existing ChiralManifoldRheology class is unchanged. This Part adds:
+
+· GroupAgent dataclass — per-agent OXTR density, gap-junction coupling, NR3C1 methylation, OXTR methylation, base voltage
+· HypergraphCoordinationEngine — cognitive glue matrix, hypergraph payoff, common-prior alignment, Ridge–Valley regime classification, Ridge–Valley bifurcation ratio
+· Optional use_eeg_gate parameter on process_interaction_node — when True, phase-lock requires both scalar alignment and field-level iCOH above threshold; when False (default), the scalar criterion governs
+
+The use_eeg_gate flag imports compute_hyperscan_phase_lock lazily, so the rheology module does not hard-depend on the hyperscan module. If the import fails, the scalar criterion is used and an eeg_error key is set in the result.
+
+9.4 Integration Contract
+
+The three modules couple only through the rheology_result dictionary. Any module can be replaced with an alternative implementation provided the dictionary keys are preserved:
+
+· From rheology.py to eeg_hyperscan.py: dielectric_reynolds_number, cognitive_glue_index, chromatin_alignment_delta, bioelectric_alignment_delta, bioelectric_decoupled
+· From eeg_hyperscan.py back to rheology.py: icoh_mean, field_phase_locked
+
+This is the only interface. No shared constants, no shared mutable state, no import cycles.
+
+9.5 Testing
+
+Tests live in tests/ and are committed with their respective modules.
+
+· test_endocrine_chromatin.py — channel-count enforcement, Takens embedding dimension checks, leaky-kernel spectrum integration, allostatic load integral
+· test_eeg_hyperscan.py — Kuramoto coupling locks under high coupling; zero coupling produces iCOH below threshold; bioelectric decoupling blocks phase-lock even with high scalar alignment; volume conduction does not pass iCOH
+· test_rheology.py — extended with hypergraph order-dependence, common-prior alignment, Ridge–Valley bifurcation ratio
+
+---
+
+Section 10: Falsification Protocols
+
+Protocols continue Part II's numbering (51–78). This Part adds 79–84.
+
+Protocol 79: Phase-Space Reconstruction of the HPA Axis
+
+Objective: Confirm that pulsatile cortisol time series reconstruct a low-dimensional manifold with stability regime consistent with the leaky-kernel prediction.
+
+Methodology: Continuous cortisol sampling at 10-min intervals over 72 h in healthy adults under controlled sleep. Delay-coordinate embedding with τ set to the ultradian step. Jacobian estimated from local linear fits.
+
+Metric Verification: Falsified if the reconstructed manifold does not yield a stable-focus regime during healthy ultradian cycling. Validation requires stable-focus classification in >80% of healthy subjects, with transition to unstable-focus under acute stress challenge.
+
+Protocol 80: Chromatin Writing Quantization
+
+Objective: Test whether chromatin response to pulsatile endocrine input is quantized at the 8-channel level.
+
+Methodology: In vitro glucocorticoid pulse stimulation of hepatocyte and neuron cultures at controlled pulse frequencies. Single-cell ATAC-seq at fixed time points. Dimensionality reduction to test for 8-cluster structure.
+
+Metric Verification: Falsified if the chromatin response manifold has effective dimension significantly different from 8 across both cell types. Validation requires consistent 8-fold quantization and correspondence of the clusters to the residual channel labels.
+
+Protocol 81: Common-Prior Methylation Alignment
+
+Objective: Test whether groups that coordinate on The Ridge share NR3C1/FKBP5/OXTR methylation topology more than groups that do not.
+
+Methodology: Longitudinal cohort with methylation assays at baseline and after a controlled coordination task. Comparison of within-group variance before and after.
+
+Metric Verification: Falsified if within-group variance does not decrease significantly after successful coordination. Validation requires measurable alignment with effect size scaling with group Re_ε.
+
+Protocol 82: Ridge–Valley Bifurcation Mapping
+
+Objective: Confirm that the Ridge–Valley transition is a bifurcation at ΔG_reconfig / ATP_budget ≈ 1 rather than a graded drift.
+
+Methodology: Manipulate available ATP (via metabolic challenge) and demethylation cost (via DNMT inhibitor dose) in vitro in a cell line with an inducible strategic marker. Measure chromatin rewrite rate as a function of the ratio.
+
+Metric Verification: Falsified if rewrite rate scales continuously with the ratio. Validation requires a sharp onset at ratio ≈ 1 with measurable hysteresis.
+
+Protocol 83: Hypergraph Order-Dependence
+
+Objective: Test whether group coordination outcome depends on commitment order in hyperedges.
+
+Methodology: N-agent coordination games with controlled commitment sequencing (ascending vs. descending OXTR activation order). Compare final group state and payoff distribution.
+
+Metric Verification: Falsified if ascending and descending assemblies converge to the same final state within measurement error. Validation requires measurable divergence scaling with OXTR gradient.
+
+Protocol 84: Intergenerational Propagation
+
+Objective: Determine whether offspring chromatin state tracks parental sustained-condition patterns, or whether it is re-set by the offspring's own developmental environment.
+
+Methodology: Cross-fostering design. Parents under known sustained conditions (measured via NR3C1/FKBP5 methylation at study entry) are paired with non-exposed foster parents. Offspring methylation is assayed at matched developmental stages.
+
+Metric Verification: If offspring methylation patterns track foster-parent rather than biological-parent patterns, propagation is through the postnatal developmental environment. If offspring track biological-parent patterns despite cross-fostering, propagation is through germline or intrauterine mechanisms. Both outcomes are informative; the design separates them.
+
+---
+
+Section 11: The Conditional Reduction Program
+
+11.1 What This Section Introduces
+
+The material in §1–§10 is the biological mechanism for the game-theory bridge. The Theory/ folder contains documents that formalize the relationship between this layer and (a) the physics suite, (b) the Free Energy Principle, and (c) a proposed non-dual adaptation layer.
+
+11.2 Theory/Residual_integer_8.md
+
+Specifies the inheritance chain for the channel count. The document includes the notation warning: do not write 8 = 4 × (2 × 2).
+
+11.3 Theory/Reduction_fep.md
+
+Specifies a local, conditional reduction of QD-TER dynamics to FEP recognition dynamics. Conditional on Axioms D, S, G, C. The theorem is local in state space and linearized. Global fixed-point alignment and full nonlinear identity are explicitly not claimed. Full derivation in Theory/Reduction_fep_derivation.md.
+
+11.4 Theory/Non_dual_adaptation.md
+
+Proposes a Riemannian metric on the parameter space and formalizes belief updates as parallel transport of an intentionality vector. Conditional on the physics suite supplying the metric. Holonomy caveat stated. Coercion claim downgraded to detection.
+
+11.5 Theory/CLAIMS.md
+
+Canonical taxonomy: Axiom (inherited), Axiom (modeling), Definition, Derivation, Reduction theorem (conditional), Conjecture, Falsification test. The IDs D1–D8, M1–M11, Def1–Def6, Der1–Der5, RT1, C1–C5, FT1–FT4 are used throughout.
+
+11.6 Theory/Consolidated_specification.md
+
+Meta-level document governing how all other theory documents should be read. Part 0 lists physics-suite dependencies. Parts 1–3 consolidate the integer-8 inheritance, the FEP reduction, and the non-dual layer. Part 4 references CLAIMS.md. Parts 5–6 give adoption order and dependency summary.
+
+---
+
+Section 12: Epistemic Tier System
+
+Tier Content Status
+ESTABLISHED Endocrine pulsatility as signaling (Lightman, Veldhuis, Stavreva); tissue-specific chromatin accessibility (Roadmap, ENCODE); NR3C1 methylation correlates with sustained HPA activation and parochial altruism; OXTR methylation correlates with social cognition; Takens embedding theorem; linear stability classification; leaky-kernel dynamics; multi-timescale recovery; 0.1 Hz RFB coherence Peer-reviewed literature
+INFERENCE Endocrine pulse geometry as the chromatin-writing signal; 8-channel count inherited from physics suite applies at the endocrine-chromatin layer; imprinting dipole as the deep-layer bias; common prior as measurable methylation alignment; Ridge–Valley as bifurcation; hypergraph payoff integral as extension of Part II §3.5; sustained-condition pathway as the mechanism for collective physiological change Derived from cascade + established biology
+NOVEL CLAIM Endocrine pulse train as the temporal template for habit imprinting; endocrine-chromatin pipeline as the mechanism completing Part II §0.6; bifurcation threshold at ΔG/ATP ≈ 1; common prior as physically measurable alignment; collective coordination as sustained-condition change QD-TER specific; testable
+HYPOTHESIS (labeled) Intergenerational propagation through developmental environment (§6.3); collective constraint satisfaction above individual 9-ceiling (developed in docs/distributed_belt.md) CLAIMS.md category Conjecture
+OWED Full HPA Jacobian calibration; chromatin channel-cluster validation; imprinting in cardiac/enteric systems; companion notes (swarm_apparatus.md, liouville_parity_instance.md, collective_antenna.md, distributed_belt.md) Future scope
+
+---
+
+Section 13: Caveats and Limitations
+
+1. The 8-channel count is inherited from Theory/Residual_integer_8.md. This document does not re-derive it.
+2. The ultradian 8-pulse window (12 h / 90 min) is a model choice. The 8-count is clean but definitional.
+3. Phase-space reconstruction and linear stability classification are standard techniques. They classify the dynamical regime, not the chromatin channels. The two layers are separate.
+4. The imprinting dipole is real in brain tissue and placenta. Extension to cardiac and enteric nervous systems is an open empirical question.
+5. Intergenerational propagation is an open empirical question. Protocol 84's cross-fostering design distinguishes germline/intrauterine propagation from postnatal developmental propagation.
+6. The FEP reduction is local and conditional. See Theory/Reduction_fep.md for the boundary of the claim.
+7. The non-dual adaptation layer is a proposal. The metric bridge is unstated. The coercion claim is downgraded to detection.
+8. Collective coordination is modeled as sustained-condition change (§6.4). It does not clear specific ancestral memories, does not transfer chromatin marks between individuals, and does not bypass the Ridge–Valley bifurcation. The collective-array architectures (collective antenna, distributed belt) are developed in separate documents and are labeled as Conjecture.
+9. No medical claims are made. This is a theoretical physics-biology formalization.
+
+---
+
+Section 14: References
+
+QD-TER Internal Documents
+
+· v6.0 Part I — The Human Belt: Conscious Authorship, Ancestry & The Coherence Hierarchy
+· v7.0 Part II — The Human Belt: Structural Foundation
+· v8.0 Part III — The Human Belt: Operational Regimen & Protocols
+· v9.0 Part IV — The Human Belt: The Endocrine–Chromatin Axis (this document)
+· Theory/Consolidated_specification.md — Meta-level specification
+· Theory/CLAIMS.md — Claims taxonomy
+· Theory/Residual_integer_8.md — Channel count inheritance
+· Theory/Reduction_fep.md — Conditional FEP reduction
+· Theory/Reduction_fep_derivation.md — Full derivation
+· Theory/Non_dual_adaptation.md — Non-dual adaptation layer
+· docs/aether_as_residual.md — Aether as immutable substrate
+· docs/swarm_apparatus.md — Companion note for institutional layer (forthcoming)
+· docs/liouville_parity_instance.md — Companion note for arithmetic instance (forthcoming)
+· docs/collective_antenna.md — Companion note for multi-organism antenna arrays (forthcoming)
+· docs/distributed_belt.md — Companion note for phase-locked group architecture (forthcoming)
+
+Interpretive Layer
+
+· Frame/Gnosis_frame.md — Declared interpretive frame. Adjacent to Theory/, not dependent on it.
+
+Source Modules
+
+· src/manifold/endocrine_chromatin.py — separate commit
+· src/manifold/eeg_hyperscan.py — separate commit
+· src/manifold/rheology.py — extension commit
+
+Published Literature
+
+1. DiMaggio, P. J., & Powell, W. W. (1983). The Iron Cage Revisited. American Sociological Review, 48(2), 147–160.
+2. Gieryn, T. F. (1983). Boundary-Work and the Demarcation of Science from Non-Science. American Sociological Review, 48(6), 781–795.
+3. Lightman, S. L., & Conway-Campbell, B. L. (2010). The crucial role of pulsatile activity of the HPA axis. Nature Reviews Neuroscience, 11, 710–718.
+4. Luhmann, N. (1995). Social Systems. Stanford University Press.
+5. Mangerel, A. (2024). On the Liouville function and its correlations. IMRN.
+6. McEwen, B. S. (1998). Protective and damaging effects of stress mediators. New England Journal of Medicine, 338, 171–179.
+7. Roadmap Epigenomics Consortium (2015). Nature, 518, 317–330.
+8. Stavreva, D. A., et al. (2009). Ultradian hormone stimulation induces glucocorticoid receptor-mediated pulses of gene transcription. Nature Cell Biology, 11, 1093–1102.
+9. Takens, F. (1981). Detecting strange attractors in turbulence. Lecture Notes in Mathematics, 898, 366–381.
+10. Veldhuis, J. D., et al. Deconvolution analysis of pulsatile hormone secretion (various).
+11. CaptainSude (2026). Liouville–Goldbach: Multiples of Four (v1.0.0). GitHub release.
+
+---
+
+Appendix: Design Invariants
+
+1. The aether is an immutable substrate. This document does not re-derive it.
+2. The 8-channel count is inherited. This document does not re-derive it.
+3. The FEP reduction is local and conditional.
+4. Intergenerational propagation of physiological conditions is an open empirical question.
+5. The EEG hyperscanning layer is a simulator.
+6. Collective coordination is a sustained-condition mechanism, not a mechanism that transfers information between individuals.
+7. The collective antenna and distributed belt architectures are developed in separate companion notes.
+8. The interpretive layer is declared in Frame/Gnosis_frame.md and is not a dependency of the mechanisms in this document.
+
+---
+
+Document compiled: September 2026
+QD-TER Human-Medium v9.0 — The Human Belt: Part IV — The Endocrine–Chromatin Axis
+Repository: github.com/JackyReaps/QD-TER-Human-Medium
