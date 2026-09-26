@@ -1,9 +1,9 @@
 # QD-TER Human-Medium: Possible Next Steps
 
-**Date:** August 2026
+**Date:** August 2026  
 **Status:** Roadmap — advanced theoretical connections between the public Human-Medium biological framework (v3.0/v4.0) and the internal QD-TER physics suite.
 
-> These derivations are **not required** for the falsification experiments documented in the public release. They provide absolute energy scales, spectral selection rules, and debt-entropy formalisms for researchers seeking deeper integration between organismic electrodynamics and the fundamental graph-theoretic framework.
+> These derivations are **not required** for the falsification experiments documented in the public release. They provide absolute energy scales, spectral selection rules, and debt-entropy formalism.
 
 ---
 
@@ -17,7 +17,7 @@
 - Waist field scale $E_{\text{waist}} = \sqrt{J_0/(\alpha_{\text{DNA}} a_0^3)} \sim 10^7$ V/m
 - Absolute critical decay rate $\mathbb{D}_{\text{crit}}^{\text{abs}}$ in terms of $\Omega_0$ and $\prod \kappa_i$
 
-**Experimental relevance:** Converts relative $\kappa_i$ thresholds into absolute field-intensity requirements for PEMF/LIPUS therapeutic protocols. Enables dosage calibration from first principles rather than empirical tuning.
+**Experimental relevance:** Converts relative $\kappa_i$ thresholds into absolute field-intensity requirements for PEMF/LIPUS therapeutic protocols. Enables dosage calibration from first principles.
 
 ---
 
@@ -26,7 +26,7 @@
 **Status:** Derived internally. Links biological stability factors to QD-TER debt/saved dynamics.
 
 **What it provides:**
-- Healing rate $h(t) = h_0 \cdot \prod_i \kappa_i(t) \cdot \left(\|\mathbf{\hat{M}}_E^{(\text{bonding})}\|_F / \|\mathbf{\hat{M}}_E^{(\text{stress})}\|_F\right)$
+- Healing rate $h(t) = h_0 \cdot \prod_i \kappa_i(t) \cdot (\|\mathbf{\hat{M}}_E^{(\text{bonding})}\|_F / \|\mathbf{\hat{M}}_E^{(\text{stress})}\|_F)$
 - Baseline rate $h_0 = \Omega_0 (\lambda_1/\lambda_{\text{max}})^2 \sim 10^{-3}$ s$^{-1}$
 - Sigma-1 enhanced rate $h_{\Sigma}$ with DMT-mediated permittivity modulation
 
@@ -43,13 +43,13 @@
 - Selection rule: $\langle \psi_{\text{waist}} | \hat{\chi}_k | \psi_{\text{waist}} \rangle \neq 0$ required for motif $k$ to drive epigenetic writing
 - Waist-restricted upgraded Jacobian $\mathbf{J}^*_{\text{waist}}$ governing projected state evolution
 
-**Experimental relevance:** Predicts which hormone combinations can (and cannot) propagate coherent write commands to chromatin, regardless of concentration. Explains why some hormones fail to produce epigenetic effects even at pharmacological doses.
+**Experimental relevance:** Predicts which hormone combinations can (and cannot) propagate coherent write commands to chromatin, regardless of concentration. Explains why some hormones fail to produce expected effects.
 
 ---
 
 ## 4. Extended Cross-Modal $\chi^{(3)}$ Phenomenology
 
-**Status:** Partially in v4.0 \u00a73.5.1. Full tensor structure and phase-dependent soliton threshold modulation are documented internally.
+**Status:** Partially in v4.0 §3.5.1. Full tensor structure and phase-dependent soliton threshold modulation are documented internally.
 
 **What it provides:**
 - Complete third-order susceptibility tensor $\chi_{jk}^{(3)}$ for biological soft matter across all sensory pathways
@@ -62,7 +62,7 @@
 
 ## Access
 
-These derivations require the gauge-covariant Möbius resonance formalism and the QD-TER spectral observer framework. For collaboration inquiries, contact **@jackyreaps** (x.com/jackyreaps).
+These derivations require the gauge-covariant Möbius resonance formalism and the QD-TER spectral observer framework. For collaboration inquiries, contact **James Dean** via the repository: https://github.com/jackyreaps/QD-TER-Human-Medium/issues
 
 ---
 
