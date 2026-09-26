@@ -12,7 +12,7 @@ from .rheology import (
     process_interaction_node,
 )
 
-from .eeg_hyperscan import (          # change to EEG_hyperscan if you keep the capitalised filename
+from .EEG_hyperscan import (
     compute_hyperscan_phase_lock,
     SensorMontage,
     SourceSpace,
