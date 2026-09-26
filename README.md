@@ -1,5 +1,4 @@
 
-
 QD-TER Human-Medium
 
 Quantum Dilation of Time Emergent Reality — Human-Medium Layer
@@ -21,7 +20,7 @@ The public implementation layer of the QD-TER framework — the bridge between t
 · Falsification protocols with pre-registered experiments
 · Test suites verifying the code against the document claims
 
-Nothing here derives the fundamental constants (ε₀, μ₀, G_N, α_EM). The aether is treated as an immutable substrate; the 8-channel residual structure is inherited from the physics suite and[...]
+Nothing here derives the fundamental constants (ε₀, μ₀, G_N, α_EM). The aether is treated as an immutable substrate; the 8-channel residual structure is inherited from the physics suite and the human organism is modeled as a phase-locked dielectric interface rather than a source of the substrate itself.
 
 ---
 
@@ -49,25 +48,27 @@ QD-TER-Human-Medium/
 ├── QD-TER_HumanMedium_v8.0_PartIII.md
 │
 ├── QD-TER_HumanMedium_v9.0/
-│   ├── QD-TER_Human_medium_v9.0
+│   ├── QD-TER_HumanMedium_v9.0
 │   ├── Theory/          # CLAIMS.md, Consolidated_specification.md, Residual_integer_8.md, ...
 │   └── Docs/            # swarm_apparatus.md, liouville_parity_instance.md, ...
 │
 ├── Frame/               # Gnosis_frame.md (interpretive layer)
 ├── docs/                # aether_as_residual.md, quick_reference.md
-├── src/manifold/        # rheology.py, endocrine_chromatin.py, EEG_hyperscan.py
+├── src/manifold/        # rheology.py, Endocrine_chromatin.py, EEG_hyperscan.py
 ├── tests/               # test_rheology.py, Test_endocrine_chromatin.py, ...
 ├── examples/            # pd_tournament.py
 └── POSSIBLE-NEXT-STEPS.md
 ```
 
 <details>
-<summary><strong>Full file descriptions</strong> (click to expand)</summary>Core documents
+<summary><strong>Full file descriptions</strong> (click to expand)</summary>
+
+Core documents
 
 · QD-TER_HumanMedium_v6.0_PartI.md — Authorship, ancestry, coherence hierarchy. The control layer.
 · QD-TER_HumanMedium_v7.0_PartII.md — Structural foundation. P-V-C triad, ℛ-operator, strategic landscape, Re_ε. The architecture layer.
 · QD-TER_HumanMedium_v8.0_PartIII.md — Operational regimen. Nutrition, exercise, sleep, Sigma-1 gateway, falsification matrix. The implementation layer.
-· QD-TER_HumanMedium_v9.0/QD-TER_Human_medium_v9.0 — Endocrine–chromatin axis. Pulsatile signaling, Takens reconstruction, hypergraph coordination, sustained conditions. The mechanism layer.
+· QD-TER_HumanMedium_v9.0/QD-TER_HumanMedium_v9.0 — Endocrine–chromatin axis. Pulsatile signaling, Takens reconstruction, hypergraph coordination, sustained conditions. The mechanism layer.
 
 v9.0 Theory layer
 
@@ -88,7 +89,7 @@ v9.0 Docs (companion notes)
 Source modules
 
 · src/manifold/rheology.py — Re_ε, bioelectric decoupling, strategic topology, cognitive glue, interaction-node processing, optional EEG gate.
-· src/manifold/endocrine_chromatin.py — Takens embedding, regime classification, leaky-kernel integration, 8-channel write vector.
+· src/manifold/Endocrine_chromatin.py — Takens embedding, regime classification, leaky-kernel integration, 8-channel write vector.
 · src/manifold/EEG_hyperscan.py — 6-source hexad, toy lead-field, iCOH-based field-level phase-lock gate.
 
 Supporting
@@ -100,7 +101,9 @@ Supporting
 · examples/pd_tournament.py — Iterated Prisoner's Dilemma example.
 · POSSIBLE-NEXT-STEPS.md — Roadmap.
 
-</details>---
+</details>
+
+---
 
 Quick Start
 
@@ -116,7 +119,7 @@ from src.manifold.rheology import (
     ChiralManifoldRheology, OrganismProfile,
     BioelectricState, process_interaction_node,
 )
-from src.manifold.endocrine_chromatin import (
+from src.manifold.Endocrine_chromatin import (
     EndocrineChromatinEngine, EndocrineSignal, ChromatinChannel,
 )
 from src.manifold.EEG_hyperscan import compute_hyperscan_phase_lock
