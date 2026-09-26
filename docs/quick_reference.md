@@ -8,7 +8,7 @@
 | **Cardiac** | ~40K | **P** (Proprioceptive) | Primary oscillator — drives myofascial piezoelectric lattice |
 | **Enteric** | ~100–500M | **V** (Vestibular) | Ground anchor — metabolic baseline for dielectric medium |
 
-*Why functional:* The cardiac brain's EM field + mechanical oscillation shape tissue-scale dielectric properties (P). The enteric brain's neurochemical output determines the body's metabolic "gravitational constant" (V). The cephalic brain operates on the integrated substrate (C).
+*Why functional:* The cardiac brain's EM field + mechanical oscillation shape tissue-scale dielectric properties (P). The enteric brain's neurochemical output determines the body's metabolic ground reference (V).
 
 ---
 
@@ -116,4 +116,4 @@ Both OXTR (viscosity reducer) AND gap-junction density (cognitive glue) must be 
 
 ---
 
-*For full derivations, falsification protocols, and literature anchors, see doc_7_0_structural_foundation.md*
+*For full derivations, falsification protocols, and literature anchors, see [QD-TER Human-Medium v7.0 Part II: Structural Foundation](../QD-TER_HumanMedium_v7.0_PartII.md).*
