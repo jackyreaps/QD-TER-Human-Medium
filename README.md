@@ -21,7 +21,7 @@ The public implementation layer of the QD-TER framework — the bridge between t
 · Falsification protocols with pre-registered experiments
 · Test suites verifying the code against the document claims
 
-Nothing here derives the fundamental constants (ε₀, μ₀, G_N, α_EM). The aether is treated as an immutable substrate; the 8-channel residual structure is inherited from the physics suite and not re-derived here.
+Nothing here derives the fundamental constants (ε₀, μ₀, G_N, α_EM). The aether is treated as an immutable substrate; the 8-channel residual structure is inherited from the physics suite and[...]
 
 ---
 
@@ -105,7 +105,7 @@ Supporting
 Quick Start
 
 ```bash
-git clone https://github.com/JackyReaps/QD-TER-Human-Medium.git
+git clone https://github.com/jackyreaps/QD-TER-Human-Medium.git
 cd QD-TER-Human-Medium
 pip install numpy scipy pytest
 pytest tests/ -v
@@ -173,10 +173,10 @@ Citation
 
 ```bibtex
 @software{qdter_human_medium_2026,
-  author = {JackyReaps},
+  author = {James Dean},
   title  = {QD-TER Human-Medium: Structural Foundation v6.0--v9.0},
   year   = {2026},
-  url    = {https://github.com/JackyReaps/QD-TER-Human-Medium}
+  url    = {https://github.com/jackyreaps/QD-TER-Human-Medium}
 }
 ```
 
@@ -188,4 +188,4 @@ CC BY-SA 4.0. See CITATION.cff for details.
 
 ---
 
-Maintained by JackyReaps. For the physics suite and cascade foundation, open a GitHub issue.
+Maintained by James Dean. For the physics suite and cascade foundation, open a GitHub issue.
