@@ -240,14 +240,3 @@ from src.manifold.EEG_hyperscan import compute_hyperscan_phase_lock
 
 ---
 
-## Why this fixes it
-
-| Cause | Fix |
-|---|---|
-| Nested triple-backtick fences terminated early, dumping the rest of the file as plain text | Four-backtick outer fences on every section containing inner code blocks (Sections 5, 6, 7, 10) |
-| Tables written as space-separated runs, not pipe-delimited rows | Every table rewritten with `\|` delimiters and header rows (Sections 2, 4, 6, 8) |
-| ASCII diagram mangled by line-wrapping | Redrawn on a two-axis grid inside a code fence (Section 9) |
-| Underscores in `Re_ε`, `N_waist`, `σ_parity` triggering italic markdown | Replaced with Unicode subscripts: `Re_ε`, `N_waist`, `σ_parity` (Sections 2, 6, 8) |
-| `<details>` blocks with no blank line before the inner table | Blank line inserted after every `<summary>` (Section 6) |
-
-Paste Sections 1 through 10 in order. After the last one, `grep -c '```' README.md` should return an **even number**. If it returns odd, one fence is unbalanced and the offending section needs its outer fence widened to four backticks.
