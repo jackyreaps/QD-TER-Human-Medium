@@ -224,11 +224,21 @@ class PeptideinLoad:
         if bio_decoupling < 0 or bio_decoupling > 1:
             raise ValueError("bio_decoupling must be in [0, 1].")
 
-        # Non-linear activation. Sinusoidal in Re_epsilon because
-        # gap-junction coupling has phase dependence. Modulated by
-        # bioelectric decoupling.
-        activation = float(
-            np.sin(re_epsilon * np.pi / 2.0) * (1.0 - bio_decoupling)
+        # Normalize Re_epsilon to a bounded activation via a saturating
+        # transform. Half-saturation at Re_epsilon = 50, the Ridge
+        # midpoint. Monotonic, so activation cannot oscillate with
+        # coupling strength.
+        re_norm = float(np.tanh(re_epsilon / 50.0))
+        activation = float(re_norm * (1.0 - bio_decoupling))
+
+        # Structural channel generation is bounded by the binding
+        # capacity. As P_8 approaches B_8, generation declines toward
+        # zero. This prevents the anchor from accumulating without bound.
+        structural_headroom = max(
+            0.0,
+            1.0
+            - self.states[STRUCTURAL_CHANNEL]
+            / self.binding_capacity[STRUCTURAL_CHANNEL],
         )
 
         # Channel-specific generation profile.
@@ -243,7 +253,7 @@ class PeptideinLoad:
             (1.0 - activation) * 1.5,
             (1.0 - activation) * 1.1,
             (1.0 - activation) * 0.9,
-            activation * 2.0,
+            activation * 2.0 * structural_headroom,
         ], dtype=float)
 
         # Leaky-kernel step (Euler).
@@ -253,3 +263,190 @@ class PeptideinLoad:
         self.states = np.clip(self.states, 0.0, None)
         self.allostatic_residue = float(np.sum(self.states))
         return self.states.copy()
+
+    # ------------------------------------------------------------------
+    # Number–Location diagnostics
+    # ------------------------------------------------------------------
+
+    def check_spatial_criticality(self) -> Dict[str, Any]:
+        """Diagnose the failure mode: Number or Location.
+
+        Number failures come from binding-site saturation at any
+        single channel. Location failures come from the population
+        shifting away from the expected topology. Their conjunction
+        defines the Valley.
+
+        Returns:
+            Dict with keys:
+                diagnosis: OPTIMAL | DENSITY_CRITICAL | TOPOLOGY_ERROR
+                    | COMPOUND_FAILURE.
+                local_jamming: max_i (P_i / B_i). The Number measure.
+                global_jamming: sum(P) / sum(B). Aggregate load.
+                location_error: Total-variation distance from the
+                    expected distribution, in [0, 1]. Location measure.
+                saturated_channels: Sorted list of indices with
+                    P_i / B_i > 1.
+        """
+        saturation = self.states / self.binding_capacity
+        local_jamming = float(np.max(saturation))
+        global_jamming = float(
+            np.sum(self.states) / np.sum(self.binding_capacity)
+        )
+
+        total = float(np.sum(self.states))
+        if total > 1e-9:
+            actual = self.states / total
+            location_error = float(
+                0.5 * np.sum(np.abs(actual - self.expected_distribution))
+            )
+        else:
+            location_error = 0.0
+
+        saturated = [int(i) for i in np.where(saturation > 1.0)[0]]
+
+        density_fail = (
+            (local_jamming > LOCAL_JAMMING_THRESHOLD)
+            or (global_jamming > GLOBAL_JAMMING_THRESHOLD)
+        )
+        location_fail = location_error > LOCATION_ERROR_THRESHOLD
+
+        if density_fail and location_fail:
+            diagnosis = "COMPOUND_FAILURE"
+        elif density_fail:
+            diagnosis = "DENSITY_CRITICAL"
+        elif location_fail:
+            diagnosis = "TOPOLOGY_ERROR"
+        else:
+            diagnosis = "OPTIMAL"
+
+        return {
+            "diagnosis": diagnosis,
+            "local_jamming": local_jamming,
+            "global_jamming": global_jamming,
+            "location_error": location_error,
+            "saturated_channels": saturated,
+        }
+
+    def evaluate_landscape_zone(self) -> str:
+        """Map the peptidein state to the strategic landscape zone.
+
+        Returns:
+            "RIDGE", "VALLEY", or "ABYSS".
+        """
+        diag = self.check_spatial_criticality()["diagnosis"]
+        glue_density = float(np.sum(self.states[GLUE_CHANNELS]))
+
+        if diag == "COMPOUND_FAILURE":
+            return "VALLEY"
+        if glue_density < GLUE_DEPLETION_THRESHOLD:
+            return "ABYSS"
+        if diag in ("DENSITY_CRITICAL", "TOPOLOGY_ERROR"):
+            return "VALLEY"
+        return "RIDGE"
+
+
+# ----------------------------------------------------------------------
+# Sigma1Gateway
+# ----------------------------------------------------------------------
+
+class Sigma1Gateway:
+    """Mode-specific clearance operator for the peptidein interface.
+
+    Modes:
+        - DEGRADATION: accelerate gamma on saturated channels.
+          Addresses the Number problem.
+        - RETRAFFICKING: adjust state vector toward the expected
+          distribution. Addresses the Location problem.
+        - COMPOUND_CORRECTION: both engaged simultaneously.
+
+    Gamma handling:
+        Working gamma is recomputed on each call from the immutable
+        baseline. When diagnosis is OPTIMAL, gamma is reset. This
+        prevents runaway acceleration across recovery cycles.
+
+    Args:
+        degradation_gain: Multiplier on baseline gamma for saturated
+            channels. Must be >= 1.0.
+        retrafficking_rate: Per-step adjustment toward the expected
+            distribution. In (0, 1].
+    """
+
+    def __init__(
+        self,
+        degradation_gain: float = 3.0,
+        retrafficking_rate: float = 0.15,
+    ) -> None:
+        if degradation_gain < 1.0:
+            raise ValueError("degradation_gain must be >= 1.0.")
+        if not (0.0 < retrafficking_rate <= 1.0):
+            raise ValueError("retrafficking_rate must be in (0, 1].")
+
+        self.degradation_gain = degradation_gain
+        self.retrafficking_rate = retrafficking_rate
+        self.gate_state: str = "CLOSED"
+        self.mode: Optional[str] = None
+
+    def detect_and_respond(
+        self,
+        peptidein: PeptideinLoad,
+    ) -> Dict[str, Any]:
+        """Diagnose and apply the appropriate correction in place."""
+        diag = peptidein.check_spatial_criticality()
+
+        if diag["diagnosis"] == "OPTIMAL":
+            self.gate_state = "CLOSED"
+            self.mode = None
+            peptidein.reset_gamma()
+            return {
+                "diagnosis": diag["diagnosis"],
+                "mode": None,
+                "gate_state": self.gate_state,
+            }
+
+        self.gate_state = "OPEN"
+        mode_applied: Optional[str] = None
+
+        # Mode A — Number correction
+        if diag["diagnosis"] in ("DENSITY_CRITICAL", "COMPOUND_FAILURE"):
+            saturation = peptidein.states / peptidein.binding_capacity
+            saturated = saturation > 0.8
+            peptidein.gamma = np.where(
+                saturated,
+                peptidein._gamma_baseline * self.degradation_gain,
+                peptidein._gamma_baseline,
+            )
+            mode_applied = "DEGRADATION"
+
+        # Mode B — Location correction
+        if diag["diagnosis"] in ("TOPOLOGY_ERROR", "COMPOUND_FAILURE"):
+            total = float(np.sum(peptidein.states))
+            if total > 1e-9:
+                actual = peptidein.states / total
+                target = peptidein.expected_distribution
+                correction = (
+                    (target - actual) * total * self.retrafficking_rate
+                )
+                peptidein.states = np.clip(
+                    peptidein.states + correction, 0.0, None
+                )
+                peptidein.allostatic_residue = float(
+                    np.sum(peptidein.states)
+                )
+            mode_applied = (
+                "COMPOUND_CORRECTION" if mode_applied == "DEGRADATION"
+                else "RETRAFFICKING"
+            )
+
+        self.mode = mode_applied
+        return {
+            "diagnosis": diag["diagnosis"],
+            "mode": mode_applied,
+            "gate_state": self.gate_state,
+        }
+
+    def close(self, peptidein: Optional[PeptideinLoad] = None) -> None:
+        """Manually close the gate after recovery is confirmed."""
+        self.gate_state = "CLOSED"
+        self.mode = None
+        if peptidein is not None:
+            peptidein.reset_gamma()
