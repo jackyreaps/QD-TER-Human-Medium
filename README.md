@@ -1,4 +1,3 @@
-
 QD-TER Human-Medium
 
 Quantum Dilation of Time Emergent Reality — Human-Medium Layer
@@ -8,6 +7,22 @@ Human-Medium Layer of the QD-TER framework: multi-scale biophysical architecture
 This repository contains the operational documents, production code, and falsification protocols for the QD-TER Human-Medium suite (v6.0–v9.0), built on the foundational suite (v1.0–v5.0).
 
 Status: Parts I–IV published. The four-part additive structure is complete.
+
+## Search & Discovery Keywords
+
+This repository is indexed for the following concepts to improve discoverability across search engines, repository search, and cross-disciplinary browsing:
+
+Consciousness & system reduction: consciousness, hard-problem-of-consciousness, free-energy-principle, FEP reduction, non-dual adaptation, agency, gnosis.
+
+Biophysics & somatic structures: biophysics, quantum biology, dielectric waveguides, myofascial lattice, body-as-antenna, bioelectric decoupling, embodied cognition.
+
+Neuro-dynamics & hyperscanning: neuroscience, EEG hyperscanning, inter-brain coherence, neural oscillations, brain coherence, cognitive neuroscience.
+
+Mathematical modeling & chaos theory: hypergraph dynamics, chiral manifold, Takens embedding, rheology, dynamical systems, differential geometry, Riemannian metrics, phase-space reconstruction.
+
+Cellular & endocrine pathways: endocrine-chromatin, chromatin residue, pulsatile signaling, sigma-1 gateway, epigenetics, endocrine system.
+
+Project architecture: qd-ter, human-medium, falsification matrix, coherence hierarchy, operational framework, framework architecture, sustained conditions.
 
 ---
 
@@ -53,7 +68,7 @@ QD-TER-Human-Medium/
 │   └── Docs/            # swarm_apparatus.md, liouville_parity_instance.md, ...
 │
 ├── Frame/               # Gnosis_frame.md (interpretive layer)
-├── docs/                # aether_as_residual.md, quick_reference.md
+├── docs/                # aether_as_residual.md, quick_reference.md, Agency_and_Gnosis_Architecture.md
 ├── src/manifold/        # rheology.py, Endocrine_chromatin.py, EEG_hyperscan.py
 ├── tests/               # test_rheology.py, Test_endocrine_chromatin.py, ...
 ├── examples/            # pd_tournament.py
@@ -96,6 +111,7 @@ Supporting
 
 · docs/aether_as_residual.md — Why the code treats the aether as given.
 · docs/quick_reference.md — One-page cheat sheet.
+· docs/Agency_and_Gnosis_Architecture.md — Bridge between the Gnosis Frame and code-based agency mechanics.
 · Frame/Gnosis_frame.md — Declared interpretive layer (adjacent, not a dependency).
 · tests/ — Pytest suites for each module.
 · examples/pd_tournament.py — Iterated Prisoner's Dilemma example.
