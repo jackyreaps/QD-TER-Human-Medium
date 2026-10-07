@@ -37,6 +37,11 @@ from typing import List, Dict, Any, Optional, Tuple
 
 import numpy as np
 
+from .peptidein_load import (
+    PeptideinLoad,
+    Sigma1Gateway,
+)
+
 
 # ----------------------------------------------------------------------
 # Constants
@@ -393,4 +398,92 @@ class EndocrineChromatinEngine:
             "write_vector": write,
             "n_channels": self.n_channels,
             "mean_integrated_state": float(np.mean(integrated)),
+        }
+
+    def process_with_peptideins(
+        self,
+        signal: EndocrineSignal,
+        channels: List[ChromatinChannel],
+        lambda_spectrum: List[float],
+        amplitudes: List[float],
+        baseline: float,
+        re_epsilon: float,
+        bio_decoupling: float,
+        inherited_load: float = 0.1,
+        apply_sigma1: bool = True,
+    ) -> Dict[str, Any]:
+        """Extended pipeline including peptidein load dynamics.
+
+        Pipeline order:
+            1. Resample the endocrine signal.
+            2. Leaky-kernel integration (v9.0).
+            3. Peptidein load step (this sub-document).
+            4. Sigma-1 clearance if needed (this sub-document).
+            5. Chromatin write vector (v9.0).
+
+        The peptidein layer sits between integration and writing.
+        It does not replace either. Callers who do not need peptidein
+        dynamics should continue to call `process`.
+
+        Args:
+            signal: Endocrine pulse train.
+            channels: ChromatinChannel list.
+            lambda_spectrum: Decay rates for leaky integration.
+            amplitudes: Amplitudes for leaky integration.
+            baseline: Baseline methylation.
+            re_epsilon: Dielectric Reynolds number from the rheology
+                layer.
+            bio_decoupling: Bioelectric decoupling severity in [0, 1].
+            inherited_load: Baseline epigenetic constraint on the
+                non-coding landscape.
+            apply_sigma1: Engage the clearance operator if True.
+
+        Returns:
+            Dict containing every key returned by `process`, plus:
+                peptidein_vector: 8-channel state vector after any
+                    Sigma-1 correction.
+                landscape_zone: "RIDGE" | "VALLEY" | "ABYSS".
+                spatial_criticality: Number-Location diagnostic dict.
+                sigma1_response: Gateway response dict, or None if
+                    apply_sigma1 is False.
+        """
+        t, x = signal.to_series(dt_min=self.dt)
+
+        integrated_state = self.leaky_integrate(
+            x, lambda_spectrum, amplitudes
+        )
+
+        peptidein = PeptideinLoad(inherited_load=inherited_load)
+        peptidein.compute_write_vector(re_epsilon, bio_decoupling)
+
+        sigma1_response = None
+        if apply_sigma1:
+            gateway = Sigma1Gateway()
+            sigma1_response = gateway.detect_and_respond(peptidein)
+
+        peptidein_vector = peptidein.states.copy()
+        landscape = peptidein.evaluate_landscape_zone()
+        criticality = peptidein.check_spatial_criticality()
+
+        # Peptidein load acts as a gain on the chromatin write.
+        # The 0.1 coefficient is small so that normal-range
+        # peptidein loads perturb the write vector gently;
+        # pathological loads (compound failure) produce a
+        # measurable but bounded shift.
+        peptidein_gain = 1.0 + float(np.mean(peptidein_vector)) * 0.1
+        modulated_state = integrated_state * peptidein_gain
+
+        write_vector = self.write_channels(modulated_state, channels)
+
+        return {
+            "time_minutes": t,
+            "raw_signal": x,
+            "integrated_state": integrated_state,
+            "peptidein_vector": peptidein_vector,
+            "landscape_zone": landscape,
+            "spatial_criticality": criticality,
+            "sigma1_response": sigma1_response,
+            "allostatic_load": float(np.sum(peptidein_vector)),
+            "write_vector": write_vector,
+            "n_channels": self.n_channels,
         }
