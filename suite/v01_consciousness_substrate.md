@@ -1,9 +1,18 @@
-# Quantum Dilation of Time Emergent Reality (QD-TER)
+# QD-TER Human-Medium v1.0
+
 ## Human-Medium Layer: Consciousness Substrate
 
 **A Theoretical Multi-Scale Biophysical Framework of Topological Fields, Dielectric Waveguides, and Non-Linear Hypergraph Dynamics**
 
-> This document formalizes **only the Human-Medium layer** of the QD-TER framework — the biophysical and network-dynamical substrate through which higher-dimensional geometric templates are hypothesized to be translated into physiological states and the medium of consciousness. Other layers of the broader QD-TER program are maintained separately.
+> This document formalizes **only the Human-Medium layer** of the QD-TER (Quantum Dilation of Time Emergent Reality) framework — the biophysical and network-dynamical substrate through which higher-dimensional geometric templates are hypothesized to be translated into physiological states and the medium of consciousness. Other layers of the broader QD-TER program are maintained separately.
+
+---
+
+## Abstract
+
+This document formalizes the Human-Medium layer of the QD-TER framework as a set of structural hypotheses. At the micro scale it proposes microtubules as hollow dielectric terahertz waveguides shielded by a bounded low-permittivity layer of exclusion-zone (EZ) water. At the macro scale it models the organism as a non-linear hypergraph, with Lyapunov and spectral (Laplacian) bounds on its state space. The endocrinal matrix serves as the fluidic interface that couples the two scales, described with a modified Maxwell–Garnett permittivity model. A critical bifurcation threshold governs nodal switching, and a topological operator Ω_H supplies boundary conditions. Every scale carries explicit constraints and points of laboratory vulnerability, collected in a falsification protocol.
+
+**Keywords:** hypergraph dynamics, dielectric waveguides, microtubules, EZ water, non-linear bifurcation, topological operator, biophotons, falsification
 
 ---
 
