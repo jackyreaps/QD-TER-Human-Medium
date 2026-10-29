@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this framework in published work, please cite it as below."
+type: software
+title: "QD-TER Human-Medium: Structural Foundation v6.0-v10.0"
+abstract: >-
+  Human-Medium layer of the QD-TER framework: a multi-scale biophysical
+  framework of geometric fields, dielectric waveguides, and hypergraph
+  dynamics, with reference code and proposed falsification protocols.
+authors:
+  - family-names: "Dean"
+    given-names: "James"
+repository-code: "https://github.com/jackyreaps/QD-TER-Human-Medium"
+version: "10.0"
+date-released: 2026-09-26
+license: CC-BY-SA-4.0
+keywords:
+  - consciousness
+  - free-energy-principle
+  - biophysics
+  - dielectric-waveguides
+  - eeg-hyperscanning
+  - hypergraph-dynamics
+  - dynamical-systems
+  - endocrine-chromatin
+  - epigenetics
+  - falsification
